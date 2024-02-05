@@ -25,6 +25,13 @@ def ddb_get_item(name: str, realm: str) -> int:
             }
         )
         print(f"got response from db {response['name']}, {response['realm']} score {response['score']}.")
+    except Exception as e:
+        return {
+            'statusCode' : 500,
+            'body': str(e)
+        }
+    else:
+        return response.get('score')
 
 
 
