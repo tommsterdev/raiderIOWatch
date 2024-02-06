@@ -11,7 +11,7 @@ def main() -> None:
     createed_table = create_table(table_name)
 
     item_to_add: Dict[str, Any] = {
-        'name' : 'testMonkey',
+        'character' : 'testMonkey',
         'score': int,
         'last_crawled_at': '',
     }

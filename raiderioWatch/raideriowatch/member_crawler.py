@@ -1,36 +1,50 @@
 import boto3
 import json
-from typing import Dict, Any
 import urllib3
-from json_convert import write_members
+import logging
+from typing import Dict, Any
+from guild_crawler import write_members
 from botocore.exceptions import ClientError
 
-http = urllib3.PoolManager(num_pools=167)
+http = urllib3.PoolManager(num_pools=50)
 FIELDS = 'mythic_plus_scores_by_season:current'
 GUILD_FIELD = ''
 API_URL = "https://raider.io/api/v1/characters/profile"
 GUILD_URL = 'https://raider.io/api/v1/guilds/profile'
 GUILD_NAME = 'SWMG'
 INPUT_FILE = "processed_members.json"
+OUTFILE = 'members_to_ddb.json'
 
 print('Loading Function...')
 
 
 
-def crawl_member(member) -> int:
-    character_name = member['name']
-    region = member['region']
-    realm = member['realm']
-    print(f"crawling member {character_name}, {realm}...")
+def crawl_member(member: Dict[str, str | float]) -> float | None:
+    character_name = member.get("name", None)
+    region = member.get("region", None)
+    realm = member.get("realm", None)
+    print(f"crawling member {character_name}, {realm}")
     full_url = f"{API_URL}?region={region}&realm={realm}&name={character_name}&fields={FIELDS}"
     try:
+        # send get request to raider.io api
         response = http.request(method='GET', url=full_url)
 
+        # check if received valid response
+        if response.status != 200:
+            data = json.loads(response.data.decode('utf-8'))
+            logging.info(f'response status code={response.status}, error={data["error"]} : {data["message"]}')
+            return None
+
+        # decode 
         data = json.loads(response.data.decode('utf-8'))
 
+        # check if valid response
+        # if data.get('statusCode', None) == 400:
+        #     logging.info(data)
+        #     return None
+
         scores = data.get('mythic_plus_scores_by_season', None)
-        if not scores:
-            return None
+        # get current season top score for all specs
         score = scores[0]['scores']['all']
 
     except ClientError as e:
@@ -59,7 +73,7 @@ def get_members() -> int:
             num_inactive += 1
             continue
         member['score'] = score
-    write_members(active_members, 'members_to_ddb.json')
+    write_members(active_members, OUTFILE)
     print(f"number of inactive players / alt {num_inactive}")
     return len(active_members)
 

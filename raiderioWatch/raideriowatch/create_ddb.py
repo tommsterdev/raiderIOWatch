@@ -34,7 +34,7 @@ class Guild:
             self.table = self.dynamic_resources.create_table(
                 TableName=table_name,
                 KeySchema=[
-                    {"AttributeName": "name", "KeyType": "HASH"}, # partition key
+                    {"AttributeName": "character", "KeyType": "HASH"}, # partition key
                     {"AttributeName": "score", "KeyType": "RANGE"}, # Sort key
                 ],
                 AttributeDefinition=[

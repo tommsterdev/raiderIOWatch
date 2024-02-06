@@ -20,11 +20,11 @@ def ddb_get_item(name: str, realm: str) -> int:
         response=ddb_hander.get_item(
             TableName = TABLE_NAME,
             Key = {
-                '#name': {'S': name},
+                'character': {'S': name},
                 'realm': {'S': realm},
             }
         )
-        print(f"got response from db {response['name']}, {response['realm']} score {response['score']}.")
+        print(f"got response from db {response['character']}, {response['realm']} score {response['score']}.")
     except Exception as e:
         return {
             'statusCode' : 500,
@@ -33,6 +33,8 @@ def ddb_get_item(name: str, realm: str) -> int:
     else:
         return response.get('score')
 
+def get_top_scores() -> List[Dict[str, Any]]:
+    pass
 
 
 def lambda_handler(event: Dict[str, Any], context: Any):
