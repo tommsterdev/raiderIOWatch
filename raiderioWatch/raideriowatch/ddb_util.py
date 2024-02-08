@@ -12,7 +12,7 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 # TODO: *** move to env variables ***
 TABLE_NAME = os.getenv('TABLE_NAME')
-SNS_ARN = 'arn:aws:sns:us-east-1:339713051594:raider-io-watch'
+SNS_ARN = os.getenv('SNS_ARN')
 PARTITION_KEY = ('PARTITION_KEY')
 # ***********************************
 
