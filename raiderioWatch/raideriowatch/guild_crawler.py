@@ -1,21 +1,28 @@
 import json
 import os
 import csv
-from typing import Dict, Any, List
 import dataclasses
-from dataclasses import dataclass
 import urllib3
+import logging
+import boto3
+from typing import Dict, Any, List
+from dataclasses import dataclass
+from dotenv import load_dotenv
+from botocore.exceptions import ClientError
+from boto3.s3.transfer import S3UploadFailedError
 
 
 
-
-
+logger = logging.getLogger(__name__)
 http = urllib3.PoolManager()
-FIELDS = 'mythic_plus_score_by_season:current'
-GUILD_FIELD = ''
-API_URL = "https://raider.io/api/v1/characters/profile"
-GUILD_URL = 'https://raider.io/api/v1/guilds/profile'
-GUILD_NAME = 'SWMG'
+s3 = boto3.resource('s3')
+load_dotenv()
+
+
+GUILD_URL = os.getenv('GUILD_URL')
+GUILD_NAME = os.getenv('GUILD_NAME')
+BUCKET = os.getenv('S3_BUCKET')
+OUTFILE = os.getenv('S3_OBJECT')
 
 
 class EnhancedJSONEncoder(json.JSONEncoder):
@@ -58,12 +65,37 @@ def create_member(member_entry: Dict[str, Any]) -> Member:
 
     return Member(name, region, realm, race, game_class, active_spec, active_role, faction, last_crawled_at, rank)
 
+
+
 def write_members(members: List[Dict[str, Any]], output_file: str) -> None:
+
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(json.dumps(members, cls=EnhancedJSONEncoder, ensure_ascii=False, indent=4))
 
 
-def get_guild() -> Dict[Any, Any]:
+def s3_upload_member(members: List[Dict[str, Any]], bucket: str, key: str) -> None:
+
+    # create s3 object
+    s3object = s3.Object(bucket, key)
+
+    try:
+        s3object.put(
+            Body = (bytes(json.dumps(obj=members, cls=EnhancedJSONEncoder, ensure_ascii=False, indent=4).encode('utf-8'))),
+            ContentType = 'application/json'
+        )
+    except ClientError as e:
+        logger.exception(
+            "Error uploading object %s to bucket %s",
+            bucket,
+            key,
+        )
+        raise
+    else:
+        logger.info(f"Put object {key} to bucket {bucket}")
+
+
+
+def get_guild() -> List[Dict[Any, Any]]:
     params = {
         "region" : "us",
         "realm" : "tichondrius",
@@ -71,21 +103,21 @@ def get_guild() -> Dict[Any, Any]:
     }
     full_url = f"{GUILD_URL}?region={params['region']}&realm={params['realm']}&name={params['name']}&fields=members"
     print(f'requesting members from {full_url}')
-    response = http.request(method='GET', url=full_url)
-
+    try:
+        response = http.request(method='GET', url=full_url)
+    except ClientError as e:
+        logger.exception(
+            f"Error connecting to {GUILD_URL}: {e}"
+        )
     data = json.loads(response.data.decode('utf-8'))
-    print(f'got response from raider-io server test example={data["members"][-1]}')
     members = data['members']
     return members
 
-
-def main() -> None:
-    data = get_guild()
+def lambda_handler(event, context) -> None:
+    guild_data = get_guild()
     members: Dict[Member] = {}
     for entry in data:
         character = create_member(entry)
         members[character.name] = character
-    write_members(members, 'processed_members.json')
-
-if __name__ == '__main__':
-    main()
+    # write to s3 bucket
+    s3_upload_member(members=members, bucket=BUCKET, key=OUTFILE)
