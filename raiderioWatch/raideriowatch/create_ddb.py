@@ -1,6 +1,6 @@
 import boto3
 from boto3.dynamodb.conditions import Key
-from botocore.exception import ClientError
+from botocore.exceptions import ClientError
 import logging
 from typing import Any, Dict, List, Optional
 
@@ -24,7 +24,7 @@ class Guild:
     #role: str = ''
     #score: int = 0
 
-    def create_table(self, table_name: str) -> boto3.resource.factory.dynamodb.Table:
+    def create_table(self, table_name: str) -> boto3.resource:
         """
         Create an Amazon DynamoDB table that stores character data.
         The table uses the character name as the partition key and
@@ -37,16 +37,15 @@ class Guild:
                     {"AttributeName": "character", "KeyType": "HASH"}, # partition key
                     {"AttributeName": "score", "KeyType": "RANGE"}, # Sort key
                 ],
-                AttributeDefinition=[
-                    {"AttributeName": "name", "AttributeType": "N"},
-                    {"AttributeName": "score", "AttributeType": "S"},
+                AttributeDefinitions=[
+                    {"AttributeName": "character", "AttributeType": "S"},
+                    {"AttributeName": "score", "AttributeType": "N"},
                 ],
                 ProvisionedThroughput={
                     "ReadCapacityUnits": 10,
                     "WriteCapacityUnits": 10,
                 },
             )
-            self.table.wait_until_exists()
         except ClientError as e:
             if e.response["Error"]["Code"] == "ResourceNotFoundException":
                 exists = False
@@ -61,7 +60,7 @@ class Guild:
         else:
             return self.table
         
-    def list_tables(self) -> list[boto3.resource.factory.dynamodb.Table]:
+    def list_tables(self) -> list[boto3.resource]:
         """
         Lists the Amazon DynamoDB tables for the current account.
         """
@@ -133,7 +132,7 @@ class Guild:
         else:
             return response("Item")
         
-    def update_member_score_if_different(self, name: str, score: int) -> Dict[str: int] | None:
+    def update_member_score_if_different(self, name: str, score: int) -> Dict[str, int] | None:
         """
         Update a member character's score
         
@@ -178,6 +177,12 @@ class Guild:
         else:
             return response["Attributes"]
     
+def main() -> None:
+    ddb_client = boto3.client('dynamodb')
+    ddb_table = Guild(ddb_client)
+    ddb_table.create_table('guild_test')
+
 
         
-    
+if __name__ == '__main__':
+    main()

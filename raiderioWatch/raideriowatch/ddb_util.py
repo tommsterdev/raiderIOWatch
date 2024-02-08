@@ -2,29 +2,84 @@ import boto3
 from typing import Dict, Any
 import json
 import logging
+import os
+from dotenv import load_dotenv
 
 ddb = boto3.client('dynamodb')
 sns = boto3.client('sns')
+load_dotenv()
 
 logger = logging.getLogger(__name__)
-
-TABLE_NAME = 'raider-io-ranks'
+# TODO: *** move to env variables ***
+TABLE_NAME = os.getenv('TABLE_NAME')
 SNS_ARN = 'arn:aws:sns:us-east-1:339713051594:raider-io-watch'
-PARTITION_KEY = 'name'
-PARTITION_VALUE = 'name'
+PARTITION_KEY = ('PARTITION_KEY')
+# ***********************************
 
-    
-def update_db_entry(name: str, score: int, last_crawled_at: str, realm: str) -> str:
+
+def create_member_item(self, item: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
+    """
+    Constructs member ddb_item from dict
+    """
+    ddb_item = {
+        'character': {'S': item.get('character', '')},
+        'realm' : {'S': item.get('realm', '')},
+        'region': {'S': item.get('region', 'us')},
+        'score' : {'N': item.get('score', 0)},
+    }
+    return ddb_item
+
+def extract_member_item(self, item: Dict[str, Dict[str, Any]]) -> Dict[str, Any]:
+    """
+    deconstructs member ddb_item from dict
+    """
+    char_item = {
+        'character': item['character']['S'],
+        'realm' : item['realm']['S'],
+        'region': item['region']['S'],
+        'score' : int(item['score']['N']),
+    }
+    return char_item
+
+
+def ddb_put_item(table_name: str, item: Dict[str, Any]) -> None:
+        """
+        adds a generic item  to the dynamodb table.
+
+        param name: character name
+        """
+        # construct ddb item
+        ddb_item = creater_member_item(item)
+        try:
+            response = ddb.put_item(
+                TableName=table_name,
+                Item=ddb_item
+            )
+            logging.info(response)
+        except ClientError as e:
+            logger.error(
+                "Error adding item %s to table %s. Reason: %s: %s",
+                ddb_item,
+                self.table.name,
+                e.response["Error"]["Code"],
+                e.resopnse["Error"]["Message"],
+            )
+            raise
+
+# TODO: make generic 
+def ddb_update_item(table_name:str, pk: str, sk: str | None, item: Dict[str, Any]) -> None:
 
     try:
+
+        key = {
+            pk : {'S' : item['character']},
+        }
         response = ddb.update_item(
-            TableName = TABLE_NAME,
-            Key = {f'name': {'S': name}},
-            UpdateExpression='SET score = :score, last_crawled_at = :last_crawled_at, realm = :realm',
+            TableName = table_name,
+            Key = key,
+            UpdateExpression='SET score = :score',
             ExpressionAttributeValues = {
-                ':score' : {'N': str(score)},
-                ':last_crawled_at': {'S': last_crawled_at},
-                ':realm' : {'S': realm},
+                ':score' : {'N': str(item['score'])},
             },
             ReturnValues = 'ALL_NEW'
         )
