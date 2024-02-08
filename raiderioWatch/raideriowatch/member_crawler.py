@@ -3,27 +3,29 @@ import json
 import urllib3
 import logging
 from typing import Dict, Any
-from guild_crawler import write_members
+from dotenv import load_dotenv
+from utils import write_members
 from botocore.exceptions import ClientError
 
 http = urllib3.PoolManager(num_pools=50)
-FIELDS = 'mythic_plus_scores_by_season:current'
-GUILD_FIELD = ''
-API_URL = "https://raider.io/api/v1/characters/profile"
-GUILD_URL = 'https://raider.io/api/v1/guilds/profile'
-GUILD_NAME = 'SWMG'
-INPUT_FILE = "processed_members.json"
-OUTFILE = 'members_to_ddb.json'
+logger = logging.Logger(__name__)
+load_dotenv()
+
+FIELDS = os.getenv('FIELDS')
+
+API_URL = os.getenv('API_URL')
+INPUT_FILE = os.getenv('INPUT_FILE')
+OUTFILE = os.getenv('OUTFILE')
+
 
 print('Loading Function...')
-
 
 
 def crawl_member(member: Dict[str, str | float]) -> float | None:
     character_name = member.get("name", None)
     region = member.get("region", None)
     realm = member.get("realm", None)
-    print(f"crawling member {character_name}, {realm}")
+    logger.info(f"crawling member {character_name}, {realm}")
     full_url = f"{API_URL}?region={region}&realm={realm}&name={character_name}&fields={FIELDS}"
     try:
         # send get request to raider.io api
@@ -38,11 +40,6 @@ def crawl_member(member: Dict[str, str | float]) -> float | None:
         # decode 
         data = json.loads(response.data.decode('utf-8'))
 
-        # check if valid response
-        # if data.get('statusCode', None) == 400:
-        #     logging.info(data)
-        #     return None
-
         scores = data.get('mythic_plus_scores_by_season', None)
         # get current season top score for all specs
         score = scores[0]['scores']['all']
@@ -56,62 +53,60 @@ def crawl_member(member: Dict[str, str | float]) -> float | None:
         return score
 
 
+def load_data(input_file: str) -> Dict[str, Any]:
+    with open(input_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return data
 
 
-def get_members() -> int:
-    with open(INPUT_FILE, 'r', encoding='utf-8') as f:
-        members = json.load(f)
+def get_members(input_file: str) -> List[Dict[str, Any]]:
+
+    members=load_data(input_file)
+    # active member format {region, realm, name, score}
     active_members = []
+
+    # count inactive members based on score
     num_inactive = 0
+
     for _, value in members.items():
+        # only get members with rank raider / m+ and higher
         if value['rank'] <= 4:
             active_members.append({'region': value['region'], 'realm': value['realm'], 'name' : value['name'], 'score': 0})
+
+
     for member in active_members:
+        # get member data
         score = crawl_member(member)
+
         if not score:
             print(f'No score for player {member}')
             num_inactive += 1
             continue
+
         member['score'] = score
-    write_members(active_members, OUTFILE)
+
     print(f"number of inactive players / alt {num_inactive}")
-    return len(active_members)
+    logger.info(f'number of members {len(active_members)} of them {num_inactive} are inactive.')
+    return active_members
+
 
 def lambda_hander(event, context) -> Dict[str, Any]:
 
-    query_members = get_members()
     try:
-        for member, field in query_members.items():
+        members = get_members(event['input_file'])
+        output = event['output_file']
+        """
+        TODO:
 
-            #consturct full url = f"{API_URL}?region={params['region']}&realm={params['realm']}&name={params['name']}&fields={params['fields']}"
-            full_url = f"{API_URL}?region={field['region']}&realm={field['realm']}&name={field['name']}&fields={field['fields']}"
-            # get http response
-            resp = http.request(method='GET', url=full_url)
-
-            data = json.loads(resp.data.decode('utf-8'))
-
-            # reconstruct object
-            query_members[member]['score'] = data['mythic_plus_scores_by_season'][0]['scores']['all']
-            """
-            {
-                "name" : character name,
-                "region" : region,
-                "realm" : realm,
-                "score" : score,
-            }
-            
-            
-            
-            """
+        put / update members to dynamodb table or local file
+        return
+        """        
         return {
             'statusCode' : 200,
-            'body' : json.dumps(query_members.values())
+            'body' : json.dumps({'num_members' : len(members)})
         }
-    except Exception as e:
+    except ClientError as e:
         return {
             'statusCode' : 500, 
             'body' : str(e)
         }
-
-if __name__ == '__main__':
-    get_members()
