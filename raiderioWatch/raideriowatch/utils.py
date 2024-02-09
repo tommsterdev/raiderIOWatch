@@ -1,9 +1,12 @@
 import boto3
-from typing import Dict, Any, List
 import json
 import logging
 import os
+
 from dotenv import load_dotenv
+from typing import Dict, Any, List
+
+from member import Member
 
 #ddb = boto3.client('dynamodb')
 #sns = boto3.client('sns')
@@ -130,70 +133,33 @@ def sns_publish(attributes: Dict[str, Any]) -> None:
     print(f'published {message} on topic {SNS_ARN}')
     return
     
+def parse_data(data: Dict[str,Any]) -> (float, float):
+
+    scores = data.get('mythic_plus_scores_by_season', None)
+    """
+    optionality get spec and role scores here
+    """
+    score = 0.0
+    if scores:
+    # get current season top score for all specs
+        score = scores[0]['scores']['all']
+        if score != 0:
+            print(f'updating new score is {score}')
+
+    # get gear information
+    gear = data.get('gear', None)
+    logging.info(data.get('gear'), None)
+    ilvl = 0.0
+    if gear:
+        ilvl = float(gear['item_level_equipped'])
+    
+    return score, ilvl
 
 
-
-
-
-def lambda_handler(event, context) -> Dict[str, Any]:
-    try:
-        # get relevant fields
-        name: str = event.get('name', None)
-        score: int = event.get('score', None)
-        last_crawled_at: str = event.get('last_crawled_at', None)
-        realm: str = event.get('realm', 'tichondrius')
-        if not name:
-            return {
-                'statusCode': 400,
-                'body': 'Error: Name attribute is missing in event'
-            }
-
-        resp = query_ddb_entry(partition_value=name)
-        
-        items = resp.get('Items', [])
-        parse_items = []
-
-        if not items:
-            return {
-                'statusCode' : 404,
-                'body': f'Error: no match for $KEY={PARTITION_VALUE}'
-            }
-
-        for item in items:
-            parse_item = {
-                'name' : item.get('name', {}).get('S', None),
-                'score' : int(item.get('score', {}).get('N', 0)),
-                'last_crawled_at' : item.get('last_crawled_at', {}).get('S', None),
-                'realm' : item.get('realm', {}).get('S', None),
-            }
-            parse_items.append(parse_item)
-
-        if items[0]:
-            query_resp = items[0]
-            query_score = int(query_resp['score']['N'])
-            # compare event score with query response score
-            # if event score > query score, update value
-            if score > query_score:
-                print('updating score...')
-                updated_attributes = update_db_entry(name=name, score=score, last_crawled_at=last_crawled_at, realm=realm)
-                print('publishing to raiderIOWatch...')
-                sns_publish(updated_attributes['body'])
-
-            # else do nothing
-            else:
-                print('Score unchanged.')
-                return {
-                    'statusCode': 200,
-                    'body' : json.dumps(items[0])
-                }
-        
-    except Exception as e:
-        return {
-            'statusCode': 500,
-            'body' : str(e)
-        }
-    else:
-        return updated_attributes
+def load_data() -> List[Member]:
+    with open(INPUT_FILE, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return [Member(**member) for member in data]
 
 
 def write_members(members: List[Dict[str, Any]], output_file: str) -> None:

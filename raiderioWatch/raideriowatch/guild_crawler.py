@@ -14,7 +14,7 @@ from utils import write_members, s3_upload_member
 
 logger = logging.getLogger(__name__)
 http = urllib3.PoolManager()
-s3 = boto3.resource('s3')
+#s3 = boto3.resource('s3')
 load_dotenv()
 
 
