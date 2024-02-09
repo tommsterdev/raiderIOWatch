@@ -7,7 +7,7 @@ from typing import Dict, Any, List
 from dotenv import load_dotenv
 from botocore.exceptions import ClientError
 from boto3.s3.transfer import S3UploadFailedError
-from member import Member, EnhancedJSONEncoder, create_member
+from member import Member, create_member_from_request
 from utils import write_members, s3_upload_member
 
 
@@ -22,34 +22,6 @@ GUILD_URL = os.getenv('GUILD_URL')
 GUILD_NAME = os.getenv('GUILD_NAME')
 BUCKET = os.getenv('S3_BUCKET')
 OUTFILE = os.getenv('S3_OBJECT')
-
-
-def write_members(members: List[Dict[str, Any]], output_file: str) -> None:
-
-    with open(output_file, 'w', encoding='utf-8') as f:
-        f.write(json.dumps(members, cls=EnhancedJSONEncoder, ensure_ascii=False, indent=4))
-
-
-def s3_upload_member(members: List[Dict[str, Any]], bucket: str, key: str) -> None:
-
-    # create s3 object
-    s3object = s3.Object(bucket, key)
-
-    try:
-        s3object.put(
-            Body = (bytes(json.dumps(obj=members, cls=EnhancedJSONEncoder, ensure_ascii=False, indent=4).encode('utf-8'))),
-            ContentType = 'application/json'
-        )
-    except ClientError as e:
-        logger.exception(
-            "Error uploading object %s to bucket %s",
-            bucket,
-            key,
-        )
-        raise
-    else:
-        logger.info(f"Put object {key} to bucket {bucket}")
-
 
 
 def get_guild() -> List[Dict[Any, Any]]:
@@ -70,11 +42,20 @@ def get_guild() -> List[Dict[Any, Any]]:
     members = data['members']
     return members
 
+
 def lambda_handler(event, context) -> None:
     guild_data = get_guild()
-    members: Dict[Member] = {}
-    for entry in guild_data:
-        character = create_member(entry)
-        members[character.name] = character
+    members = [create_member_from_request(member).model_dump() for member in guild_data]
     # write to s3 bucket
     s3_upload_member(members=members, bucket=BUCKET, key=OUTFILE)
+    return
+
+def main() -> None:
+    guild_data = get_guild()
+    members = [create_member_from_request(member).model_dump() for member in guild_data]
+    write_members(members=members, output_file='pydantic_data.json')
+
+
+if __name__ == '__main__':
+    main()
+    

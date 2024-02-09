@@ -1,12 +1,12 @@
 import boto3
-from typing import Dict, Any
+from typing import Dict, Any, List
 import json
 import logging
 import os
 from dotenv import load_dotenv
 
-ddb = boto3.client('dynamodb')
-sns = boto3.client('sns')
+#ddb = boto3.client('dynamodb')
+#sns = boto3.client('sns')
 load_dotenv()
 
 logger = logging.getLogger(__name__)
@@ -194,4 +194,33 @@ def lambda_handler(event, context) -> Dict[str, Any]:
         }
     else:
         return updated_attributes
+
+
+def write_members(members: List[Dict[str, Any]], output_file: str) -> None:
+
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(json.dumps(members, ensure_ascii=False, indent=4))
+
+
+def s3_upload_member(members: List[Dict[str, Any]], bucket: str, key: str) -> None:
+
+    # create s3 object
+    s3object = s3.Object(bucket, key)
+
+    try:
+        s3object.put(
+            Body = (bytes(json.dumps(obj=members, cls=EnhancedJSONEncoder, ensure_ascii=False, indent=4).encode('utf-8'))),
+            ContentType = 'application/json'
+        )
+    except ClientError as e:
+        logger.exception(
+            "Error uploading object %s to bucket %s",
+            bucket,
+            key,
+        )
+        raise
+    else:
+        logger.info(f"Put object {key} to bucket {bucket}")
+
+
 
