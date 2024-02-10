@@ -1,22 +1,18 @@
 import json
 import logging
 import os
-import time
-import concurrent.futures
+import asyncio
 
-from typing import Dict, Any, List
+from typing import List, Tuple
 from dotenv import load_dotenv
-from botocore.exceptions import ClientError
-from urllib3 import Timeout, PoolManager
 
 from member import Member, create_member_from_request
 from guild_crawler import get_guild
 from utils import write_members, parse_data
+from requests import http_get_async, JSONObject
+from time import perf_counter
 
 
-
-timeout = Timeout(connect=1.0, read=1.0)
-http = PoolManager(num_pools=10, timeout=timeout)
 logger = logging.Logger(__name__)
 load_dotenv()
 
@@ -28,80 +24,67 @@ OUTFILE = os.getenv('OUTFILE')
 
 print('Loading Function...')
 
-def get_members(members: List[Member]) -> List[Dict[str, Any]]:
+async def parse_response(response: JSONObject) -> Tuple[float, float]:
+    """
+    Helper function to parse score and ilvl from http response json
+    """
+    score = response['mythic_plus_scores_by_season'][0]['scores']['all']
+    ilvl = response['gear']['item_level_equipped']
+    return score, ilvl
 
-    # load members from file
-    # members=load_data()
+async def request_member(url: str) -> JSONObject:
 
-    # filter low rank members
-    active_members = [member for member in members if member.rank <= 4]
+    response: JSONObject = await http_get_async(url)
 
-    # count inactive members based on score
-    num_inactive = 0
+    if response.get('statusCode', 200) != 200:
+        print(response['statusCode'])
+
+    #parsed_response = await parse_response(response)
+
+
+    return response
+
+
+async def crawl_member(member: Member) -> Member:
+    """
+    helper function to construct api endpoint url and parse response
+    """
+    # construct query url
     
-    for member in active_members:
+    endpoint = f"{API_URL}?region={member.region}&realm={member.realm}&name={member.name}&fields={FIELDS}"
+    print(f'connecting to {endpoint}...')
 
-        print(f'getting score and ilvl data for {member.name}...')
-        try:
-            with concurrent.futures.ThreadPoolExecutor() as executor:
-                future = executor.submit(crawl_member, character_name=member.name, realm=member.realm, region=member.region)
-                score, ilvl = future.result()
-            #score, ilvl = crawl_member(member)
+    response = await request_member(endpoint)
 
-        except urllib3.exceptions.TimeoutError as e:
-            print(f'could not retrieve data for {member.name}, {member.realm}: {str(e)}')
-            continue
+    member.score, member.ilvl = await parse_response(response)
 
-        except urllib3.exceptions.MaxRetryError as e:
-            print(f'could not retrieve data for {member.name}, {member.realm}: {str(e)}')
-            continue
-
-        if score == 0.0:
-            num_inactive += 1
-
-        member.score = score
-        member.ilvl = ilvl
-
-    print(f"number of inactive players / alt {num_inactive}")
-    logger.info(f'number of members {len(active_members)} of them {num_inactive} are inactive.')
-
-    return [member.model_dump() for member in active_members]
+    
+    return member
 
 
 
-def crawl_member(character_name: str, realm: str, region: str = 'us') -> List[float] | None:
+async def main() -> None:
 
-    logger.info(f"crawling member {character_name}, {realm}")
-    full_url = f"{API_URL}?region={region}&realm={realm}&name={character_name}&fields={FIELDS}"
-    try:
-        # send get request to raider.io api
-        response = http.request(method='GET', url=full_url)
+    start = perf_counter()
 
-        # check if received valid response
-        if response.status != 200:
-            data = json.loads(response.data.decode('utf-8'))
-            logging.info(f'response status code={response.status}, error={data["error"]} : {data["message"]}')
-            return None
+    guild_data: List[Member] = await get_guild()
 
-        score, ilvl = parse_data(json.loads(response.data.decode('utf-8')))
+    elapsed = perf_counter() - start
+    print(f'get guild execution time: {elapsed}')
 
-    except (ClientError) as e:
-        return {
-            e.response['Error']["Code"],
-            e.response['Error']["Message"],
-        }
-        raise
-    else:
-        return [score, ilvl]
+    print(f'getting member data...')
+    crawled_members: List[Member] = await asyncio.gather(*[crawl_member(member) for member in guild_data])
 
+    elapsed = perf_counter() - start
+    print(f'crawl_members execution time: {elapsed}')
 
-def main() -> None:
-    guild_data = get_guild()
-    members = [create_member_from_request(member) for member in guild_data]
-    crawled_members = get_members(members)
     output_file = 'pydantic_data_with_scores.json'
-    write_members(members=crawled_members, output_file=output_file)
+    members_json = [member.model_dump() for member in crawled_members]
+    write_members(members=members_json, output_file=output_file)
+
+    elapsed = perf_counter() - start
+    print(f'dump objects and write to file execution time: {elapsed}')
 
 
 if __name__ == '__main__':
-    main()
+    asyncio.run(main())

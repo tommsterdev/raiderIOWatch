@@ -17,7 +17,7 @@ class Guild:
         self.dynamic_resources = dynamic_resources
         self.table = None
     
-    #name: str = ''
+    #character: str = ''
     #rank: int = 0
     #race: str = ''
     #spec: str = ''
@@ -40,6 +40,8 @@ class Guild:
                 AttributeDefinitions=[
                     {"AttributeName": "character", "AttributeType": "S"},
                     {"AttributeName": "score", "AttributeType": "N"},
+                    {"AttributeName": "realm", "AttributeType": "S"},
+                    {"AttributeName": "region", "AttributeType": "S"},
                 ],
                 ProvisionedThroughput={
                     "ReadCapacityUnits": 10,
@@ -91,7 +93,7 @@ class Guild:
         try:
             self.table.put_item(
                 Item={
-                    "name": name,
+                    "character": name,
                     "score": score,
                     "last_crawled_at": last_crawled_at,
                     "region": region,
@@ -119,7 +121,7 @@ class Guild:
         :return: data about the requested member
         """
         try:
-            response = self.table.get_item(Key={"name": name, "score": score})
+            response = self.table.get_item(Key={"character": name, "score": score})
         except ClientError as e:
             logger.error(
                 "Couldn't retrieve character %s from table %s. Reason %s: %s",
@@ -144,14 +146,14 @@ class Guild:
         """
 
         try:
-            response = self.table.get_item(Key={"name": name})
+            response = self.table.get_item(Key={"character": name})
             item = response.get('Item')
             if item:
                 current_val: int = item['score']
                 if score != current_val:
                     #update score
                     response = self.table.update_item(
-                        Key={"name": name,},
+                        Key={"character": name,},
                         UpdateExpression="SET score = :val",
                         ExpressionAttributeValues={':val' : score},
                         ReturnValues="UPDATED_NEW",
@@ -178,9 +180,7 @@ class Guild:
             return response["Attributes"]
     
 def main() -> None:
-    ddb_client = boto3.client('dynamodb')
-    ddb_table = Guild(ddb_client)
-    ddb_table.create_table('guild_test')
+    pass
 
 
         

@@ -9,9 +9,9 @@
         "faction": "horde",
         "active_spec": "Windwalker",
         "active_role": "DPS",
-        "last_crawled_at": "2024-02-05T10:52:54.000Z",
-        "score": 2928.3,
-        "ilvl": 486.375
+        "last_crawled_at": "2024-02-10T06:50:05.000Z",
+        "score": 2961,
+        "ilvl": 486.75
     },
     {
         "name": "Remwizard",
@@ -25,7 +25,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-03T09:56:42.000Z",
         "score": 2225.1,
-        "ilvl": 472.0
+        "ilvl": 472
     },
     {
         "name": "Kazsoja",
@@ -37,9 +37,9 @@
         "faction": "horde",
         "active_spec": "Outlaw",
         "active_role": "DPS",
-        "last_crawled_at": "2024-02-05T19:07:44.000Z",
+        "last_crawled_at": "2024-02-10T19:00:54.000Z",
         "score": 0,
-        "ilvl": 359.0
+        "ilvl": 359
     },
     {
         "name": "Haterproof",
@@ -53,7 +53,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:27.000Z",
         "score": 0,
-        "ilvl": 446.0
+        "ilvl": 446
     },
     {
         "name": "Obiikanobi",
@@ -67,7 +67,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:28.000Z",
         "score": 0,
-        "ilvl": 428.0
+        "ilvl": 428
     },
     {
         "name": "Shadowlava",
@@ -81,7 +81,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T12:14:15.000Z",
         "score": 2367.4,
-        "ilvl": 477.0
+        "ilvl": 477
     },
     {
         "name": "Makaveliï",
@@ -95,7 +95,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-07T05:41:53.000Z",
         "score": 297.3,
-        "ilvl": 447.0
+        "ilvl": 447
     },
     {
         "name": "Cancil",
@@ -109,7 +109,35 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:23.000Z",
         "score": 382.5,
-        "ilvl": 447.0
+        "ilvl": 447
+    },
+    {
+        "name": "Sorr",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Mag'har Orc",
+        "game_class": "Death Knight",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Unholy",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:25.000Z",
+        "score": 0,
+        "ilvl": 420
+    },
+    {
+        "name": "Kaziadrid",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Troll",
+        "game_class": "Druid",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Guardian",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-02-10T19:00:54.000Z",
+        "score": 285,
+        "ilvl": 431
     },
     {
         "name": "Kazlokk",
@@ -121,9 +149,23 @@
         "faction": "horde",
         "active_spec": "Demonology",
         "active_role": "DPS",
-        "last_crawled_at": "2024-02-06T16:04:16.000Z",
+        "last_crawled_at": "2024-02-10T19:00:55.000Z",
         "score": 3202.7,
-        "ilvl": 484.312
+        "ilvl": 484
+    },
+    {
+        "name": "Weatherlady",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Mag'har Orc",
+        "game_class": "Shaman",
+        "rank": 5,
+        "faction": "horde",
+        "active_spec": "Restoration",
+        "active_role": "HEALING",
+        "last_crawled_at": "2024-02-10T19:00:54.000Z",
+        "score": 0,
+        "ilvl": 356
     },
     {
         "name": "Skibaladooda",
@@ -135,9 +177,9 @@
         "faction": "horde",
         "active_spec": "Guardian",
         "active_role": "TANK",
-        "last_crawled_at": "2024-02-06T06:42:20.000Z",
-        "score": 3021.4,
-        "ilvl": 485.438
+        "last_crawled_at": "2024-02-10T17:37:44.000Z",
+        "score": 3051,
+        "ilvl": 485
     },
     {
         "name": "Scraedoosk",
@@ -151,7 +193,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:25.000Z",
         "score": 0,
-        "ilvl": 436.0
+        "ilvl": 436
     },
     {
         "name": "Afksry",
@@ -165,7 +207,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:27.000Z",
         "score": 0,
-        "ilvl": 440.0
+        "ilvl": 440
     },
     {
         "name": "Elguero",
@@ -179,7 +221,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-05T03:06:40.000Z",
         "score": 1719,
-        "ilvl": 474.0
+        "ilvl": 474
     },
     {
         "name": "Waynesinatra",
@@ -192,7 +234,7 @@
         "active_spec": "Arcane",
         "active_role": "DPS",
         "last_crawled_at": "2024-01-31T22:41:30.000Z",
-        "score": 2450.7,
+        "score": 2462.8,
         "ilvl": 475.188
     },
     {
@@ -207,7 +249,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-02-08T20:36:55.000Z",
         "score": 1622.9,
-        "ilvl": 464.0
+        "ilvl": 464
     },
     {
         "name": "Terprèkt",
@@ -221,7 +263,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-08T07:38:06.000Z",
         "score": 0,
-        "ilvl": 441.0
+        "ilvl": 441
     },
     {
         "name": "Kegstandpro",
@@ -235,7 +277,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:28.000Z",
         "score": 0,
-        "ilvl": 436.0
+        "ilvl": 436
     },
     {
         "name": "Porich",
@@ -249,7 +291,21 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:26.000Z",
         "score": 0,
-        "ilvl": 445.0
+        "ilvl": 445
+    },
+    {
+        "name": "Taroakin",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Vulpera",
+        "game_class": "Mage",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Frost",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:26.000Z",
+        "score": 0,
+        "ilvl": 392
     },
     {
         "name": "Huntydumpty",
@@ -263,7 +319,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:31.000Z",
         "score": 0,
-        "ilvl": 419.0
+        "ilvl": 419
     },
     {
         "name": "Daraven",
@@ -277,7 +333,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:26.000Z",
         "score": 0,
-        "ilvl": 428.0
+        "ilvl": 428
     },
     {
         "name": "Erebusash",
@@ -291,7 +347,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:22.000Z",
         "score": 0,
-        "ilvl": 417.0
+        "ilvl": 417
     },
     {
         "name": "Urinemymouth",
@@ -305,7 +361,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:27.000Z",
         "score": 2036.6,
-        "ilvl": 467.0
+        "ilvl": 467
     },
     {
         "name": "Prayrealhard",
@@ -319,7 +375,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-02-09T07:47:20.000Z",
         "score": 3142.5,
-        "ilvl": 485.0
+        "ilvl": 485
     },
     {
         "name": "Ashenepsilon",
@@ -333,7 +389,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-05T03:06:48.000Z",
         "score": 1480.5,
-        "ilvl": 475.0
+        "ilvl": 475
     },
     {
         "name": "Necrømantìs",
@@ -347,7 +403,35 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-01-11T09:56:27.000Z",
         "score": 2888.3,
-        "ilvl": 477.0
+        "ilvl": 477
+    },
+    {
+        "name": "Hexöffender",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dwarf",
+        "game_class": "Shaman",
+        "rank": 6,
+        "faction": "alliance",
+        "active_spec": "Elemental",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:28.000Z",
+        "score": 0,
+        "ilvl": 294
+    },
+    {
+        "name": "Hoochii",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Orc",
+        "game_class": "Shaman",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Elemental",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:27.000Z",
+        "score": 0,
+        "ilvl": 407
     },
     {
         "name": "Dannyhunter",
@@ -361,7 +445,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-09T22:36:10.000Z",
         "score": 3046.5,
-        "ilvl": 485.0
+        "ilvl": 485.625
     },
     {
         "name": "Ashenkappa",
@@ -375,7 +459,49 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-19T01:07:59.000Z",
         "score": 0,
-        "ilvl": 446.0
+        "ilvl": 446
+    },
+    {
+        "name": "Skrograga",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Orc",
+        "game_class": "Warlock",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Demonology",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-28T18:56:18.000Z",
+        "score": 1305.9,
+        "ilvl": 461
+    },
+    {
+        "name": "Cowboylock",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Orc",
+        "game_class": "Warlock",
+        "rank": 5,
+        "faction": "horde",
+        "active_spec": "Affliction",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:26.000Z",
+        "score": 0,
+        "ilvl": 418
+    },
+    {
+        "name": "Pandamastor",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Pandaren",
+        "game_class": "Warrior",
+        "rank": 5,
+        "faction": "horde",
+        "active_spec": "Fury",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-28T18:56:19.000Z",
+        "score": 0,
+        "ilvl": 415
     },
     {
         "name": "Mazikeene",
@@ -389,7 +515,21 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-01-11T09:56:28.000Z",
         "score": 0,
-        "ilvl": 291.0
+        "ilvl": 291
+    },
+    {
+        "name": "Matçha",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Blood Elf",
+        "game_class": "Demon Hunter",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Havoc",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-24T02:27:26.000Z",
+        "score": 2179.7,
+        "ilvl": 462
     },
     {
         "name": "Mandingeaux",
@@ -403,7 +543,7 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-02-09T09:01:22.000Z",
         "score": 3136.3,
-        "ilvl": 484.0
+        "ilvl": 484
     },
     {
         "name": "Dhbutcooler",
@@ -417,7 +557,49 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-02-09T22:18:35.000Z",
         "score": 3062.6,
-        "ilvl": 484.0
+        "ilvl": 484
+    },
+    {
+        "name": "Dannythyr",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dracthyr",
+        "game_class": "Evoker",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Augmentation",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-02-03T09:56:41.000Z",
+        "score": 0,
+        "ilvl": 406
+    },
+    {
+        "name": "Angryjack",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dracthyr",
+        "game_class": "Evoker",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Augmentation",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-02-10T19:00:55.000Z",
+        "score": 0,
+        "ilvl": 401
+    },
+    {
+        "name": "Choçolate",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Troll",
+        "game_class": "Druid",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Restoration",
+        "active_role": "HEALING",
+        "last_crawled_at": "2024-01-23T21:22:29.000Z",
+        "score": 819.6,
+        "ilvl": 440
     },
     {
         "name": "Stupidhørde",
@@ -429,9 +611,23 @@
         "faction": "horde",
         "active_spec": "Mistweaver",
         "active_role": "HEALING",
-        "last_crawled_at": "2024-02-08T20:36:55.000Z",
+        "last_crawled_at": "2024-02-10T19:17:42.000Z",
         "score": 3271.2,
-        "ilvl": 485.0
+        "ilvl": 485
+    },
+    {
+        "name": "Opbaby",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Human",
+        "game_class": "Warlock",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Destruction",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-02-08T20:36:55.000Z",
+        "score": 578,
+        "ilvl": 441
     },
     {
         "name": "Holyirl",
@@ -445,7 +641,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-02-08T20:36:53.000Z",
         "score": 1296.2,
-        "ilvl": 462.0
+        "ilvl": 462
     },
     {
         "name": "Soulmani",
@@ -459,7 +655,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:28.000Z",
         "score": 0,
-        "ilvl": 432.0
+        "ilvl": 432
     },
     {
         "name": "Saeralah",
@@ -473,7 +669,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:29.000Z",
         "score": 0,
-        "ilvl": 409.0
+        "ilvl": 409
     },
     {
         "name": "Bighaunchie",
@@ -487,7 +683,21 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:27.000Z",
         "score": 365.4,
-        "ilvl": 446.0
+        "ilvl": 446
+    },
+    {
+        "name": "Phodren",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Human",
+        "game_class": "Warrior",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Fury",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:31.000Z",
+        "score": 0,
+        "ilvl": 385
     },
     {
         "name": "Cheefbief",
@@ -501,7 +711,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:28.000Z",
         "score": 0,
-        "ilvl": 381.0
+        "ilvl": 381
     },
     {
         "name": "Nikomachos",
@@ -515,7 +725,35 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:24.000Z",
         "score": 0,
-        "ilvl": 439.0
+        "ilvl": 439
+    },
+    {
+        "name": "Tehbroken",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dracthyr",
+        "game_class": "Evoker",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Devastation",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:30.000Z",
+        "score": 0,
+        "ilvl": 407
+    },
+    {
+        "name": "Snakéx",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Orc",
+        "game_class": "Hunter",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Beast Mastery",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-02-06T04:55:26.000Z",
+        "score": 2188,
+        "ilvl": 469
     },
     {
         "name": "Baragah",
@@ -529,7 +767,49 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:31.000Z",
         "score": 0,
-        "ilvl": 420.0
+        "ilvl": 420
+    },
+    {
+        "name": "Tïlted",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Lightforged Draenei",
+        "game_class": "Hunter",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Marksmanship",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-02-08T20:36:54.000Z",
+        "score": 0,
+        "ilvl": 421
+    },
+    {
+        "name": "Trashplaya",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Tauren",
+        "game_class": "Druid",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Balance",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:30.000Z",
+        "score": 0,
+        "ilvl": 404
+    },
+    {
+        "name": "Revoltt",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Blood Elf",
+        "game_class": "Mage",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Fire",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:31.000Z",
+        "score": 0,
+        "ilvl": 396
     },
     {
         "name": "Saptehass",
@@ -543,7 +823,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:22.000Z",
         "score": 0,
-        "ilvl": 412.0
+        "ilvl": 412
     },
     {
         "name": "Ashenalpha",
@@ -557,7 +837,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-05T03:06:54.000Z",
         "score": 3209.1,
-        "ilvl": 483.0
+        "ilvl": 483
     },
     {
         "name": "Illidanasty",
@@ -571,7 +851,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:28.000Z",
         "score": 0,
-        "ilvl": 419.0
+        "ilvl": 419
     },
     {
         "name": "Shiftnx",
@@ -585,7 +865,7 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-02-03T09:56:45.000Z",
         "score": 0,
-        "ilvl": 446.0
+        "ilvl": 446
     },
     {
         "name": "Balbyy",
@@ -613,7 +893,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:34.000Z",
         "score": 0,
-        "ilvl": 437.0
+        "ilvl": 437
     },
     {
         "name": "Creamycooter",
@@ -627,7 +907,7 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-02-04T21:18:07.000Z",
         "score": 0,
-        "ilvl": 399.0
+        "ilvl": 399
     },
     {
         "name": "Nicolbolax",
@@ -641,7 +921,21 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:30.000Z",
         "score": 0,
-        "ilvl": 421.0
+        "ilvl": 421
+    },
+    {
+        "name": "Aits",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Blood Elf",
+        "game_class": "Priest",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Discipline",
+        "active_role": "HEALING",
+        "last_crawled_at": "2024-01-11T09:56:28.000Z",
+        "score": 0,
+        "ilvl": 400
     },
     {
         "name": "Legatostabs",
@@ -655,7 +949,21 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:30.000Z",
         "score": 0,
-        "ilvl": 415.0
+        "ilvl": 415
+    },
+    {
+        "name": "Embercloud",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dracthyr",
+        "game_class": "Evoker",
+        "rank": 5,
+        "faction": "horde",
+        "active_spec": "Devastation",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-02-03T09:56:46.000Z",
+        "score": 0,
+        "ilvl": 400
     },
     {
         "name": "Drawgoon",
@@ -669,7 +977,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-16T14:14:20.000Z",
         "score": 0,
-        "ilvl": 436.0
+        "ilvl": 436
     },
     {
         "name": "Saelalah",
@@ -683,7 +991,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:34.000Z",
         "score": 0,
-        "ilvl": 436.0
+        "ilvl": 436
     },
     {
         "name": "Stormyshot",
@@ -697,7 +1005,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:32.000Z",
         "score": 2944.4,
-        "ilvl": 476.0
+        "ilvl": 476
     },
     {
         "name": "Daggigoblin",
@@ -711,7 +1019,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-20T07:49:37.000Z",
         "score": 2883.5,
-        "ilvl": 483.0
+        "ilvl": 483
     },
     {
         "name": "Slaythen",
@@ -725,7 +1033,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:30.000Z",
         "score": 0,
-        "ilvl": 443.0
+        "ilvl": 443
     },
     {
         "name": "Jordÿn",
@@ -739,7 +1047,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:32.000Z",
         "score": 331.8,
-        "ilvl": 457.0
+        "ilvl": 457
     },
     {
         "name": "Swaeyzz",
@@ -753,7 +1061,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:31.000Z",
         "score": 0,
-        "ilvl": 435.0
+        "ilvl": 435
     },
     {
         "name": "Hothoofpics",
@@ -765,9 +1073,9 @@
         "faction": "horde",
         "active_spec": "Discipline",
         "active_role": "HEALING",
-        "last_crawled_at": "2024-02-05T19:07:45.000Z",
+        "last_crawled_at": "2024-02-10T19:00:55.000Z",
         "score": 131.1,
-        "ilvl": 439.0
+        "ilvl": 439
     },
     {
         "name": "Mizdayen",
@@ -781,7 +1089,7 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-01-11T09:56:30.000Z",
         "score": 0,
-        "ilvl": 401.0
+        "ilvl": 401
     },
     {
         "name": "Tehhammer",
@@ -795,7 +1103,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:30.000Z",
         "score": 0,
-        "ilvl": 441.0
+        "ilvl": 441
     },
     {
         "name": "Tichuetican",
@@ -808,8 +1116,8 @@
         "active_spec": "Restoration",
         "active_role": "HEALING",
         "last_crawled_at": "2024-02-09T08:21:46.000Z",
-        "score": 2660.1,
-        "ilvl": 480.688
+        "score": 2661.1,
+        "ilvl": 481.125
     },
     {
         "name": "Gethrash",
@@ -823,7 +1131,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-16T14:14:17.000Z",
         "score": 0,
-        "ilvl": 437.0
+        "ilvl": 437
     },
     {
         "name": "Beamclap",
@@ -837,7 +1145,35 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-02-01T01:39:10.000Z",
         "score": 0,
-        "ilvl": 427.0
+        "ilvl": 427
+    },
+    {
+        "name": "Tushifukato",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Highmountain Tauren",
+        "game_class": "Warrior",
+        "rank": 5,
+        "faction": "horde",
+        "active_spec": "Arms",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:31.000Z",
+        "score": 0,
+        "ilvl": 401
+    },
+    {
+        "name": "Loneliness",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Troll",
+        "game_class": "Hunter",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Beast Mastery",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:31.000Z",
+        "score": 0,
+        "ilvl": 405
     },
     {
         "name": "Monomaniacal",
@@ -851,7 +1187,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:29.000Z",
         "score": 0,
-        "ilvl": 445.0
+        "ilvl": 445
     },
     {
         "name": "Supafupa",
@@ -865,7 +1201,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:31.000Z",
         "score": 0,
-        "ilvl": 192.0
+        "ilvl": 192
     },
     {
         "name": "Kazash",
@@ -877,9 +1213,9 @@
         "faction": "horde",
         "active_spec": "Beast Mastery",
         "active_role": "DPS",
-        "last_crawled_at": "2024-02-05T19:07:47.000Z",
+        "last_crawled_at": "2024-02-10T19:00:57.000Z",
         "score": 0,
-        "ilvl": 411.0
+        "ilvl": 411
     },
     {
         "name": "Cindrethrash",
@@ -893,7 +1229,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:31.000Z",
         "score": 0,
-        "ilvl": 405.0
+        "ilvl": 405
     },
     {
         "name": "Beamspala",
@@ -907,7 +1243,7 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-02-09T13:50:49.000Z",
         "score": 3334.2,
-        "ilvl": 486.0
+        "ilvl": 486
     },
     {
         "name": "Shízz",
@@ -921,7 +1257,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:28.000Z",
         "score": 0,
-        "ilvl": 445.0
+        "ilvl": 445
     },
     {
         "name": "Hooiyahh",
@@ -935,7 +1271,21 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:34.000Z",
         "score": 0,
-        "ilvl": 412.0
+        "ilvl": 412
+    },
+    {
+        "name": "Moistyoysty",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Troll",
+        "game_class": "Druid",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Guardian",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-01-11T09:56:33.000Z",
+        "score": 0,
+        "ilvl": 378
     },
     {
         "name": "Hexxmage",
@@ -949,7 +1299,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-16T14:14:19.000Z",
         "score": 0,
-        "ilvl": 433.0
+        "ilvl": 433
     },
     {
         "name": "Swaeyy",
@@ -963,7 +1313,35 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:33.000Z",
         "score": 0,
-        "ilvl": 398.0
+        "ilvl": 398
+    },
+    {
+        "name": "Streetkitty",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Tauren",
+        "game_class": "Druid",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Feral",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-16T14:14:22.000Z",
+        "score": 0,
+        "ilvl": 322
+    },
+    {
+        "name": "Swaeyxz",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Highmountain Tauren",
+        "game_class": "Warrior",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Protection",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-01-11T09:56:35.000Z",
+        "score": 0,
+        "ilvl": 394
     },
     {
         "name": "Wetslit",
@@ -977,7 +1355,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-04T21:18:07.000Z",
         "score": 0,
-        "ilvl": 385.0
+        "ilvl": 385
     },
     {
         "name": "Sneakyteat",
@@ -991,7 +1369,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-04T21:18:08.000Z",
         "score": 0,
-        "ilvl": 379.0
+        "ilvl": 379
     },
     {
         "name": "Umbravox",
@@ -1005,7 +1383,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-06T04:55:51.000Z",
         "score": 3231.6,
-        "ilvl": 486.0
+        "ilvl": 486
     },
     {
         "name": "Swaeybaey",
@@ -1019,7 +1397,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:36.000Z",
         "score": 0,
-        "ilvl": 393.0
+        "ilvl": 393
     },
     {
         "name": "Fenrinok",
@@ -1033,7 +1411,7 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-01-11T09:56:34.000Z",
         "score": 1660.3,
-        "ilvl": 460.0
+        "ilvl": 460
     },
     {
         "name": "Shamafen",
@@ -1047,7 +1425,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:33.000Z",
         "score": 0,
-        "ilvl": 417.0
+        "ilvl": 417
     },
     {
         "name": "Narimar",
@@ -1061,7 +1439,7 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-01-11T09:56:34.000Z",
         "score": 135,
-        "ilvl": 420.0
+        "ilvl": 420
     },
     {
         "name": "Anustear",
@@ -1075,7 +1453,7 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-01-11T09:56:33.000Z",
         "score": 0,
-        "ilvl": 404.0
+        "ilvl": 404
     },
     {
         "name": "Nastypally",
@@ -1089,7 +1467,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:33.000Z",
         "score": 0,
-        "ilvl": 443.0
+        "ilvl": 443
     },
     {
         "name": "Shìzz",
@@ -1103,7 +1481,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:37.000Z",
         "score": 0,
-        "ilvl": 445.0
+        "ilvl": 445
     },
     {
         "name": "Beampriest",
@@ -1117,7 +1495,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-17T23:12:08.000Z",
         "score": 0,
-        "ilvl": 446.0
+        "ilvl": 446
     },
     {
         "name": "Onithret",
@@ -1131,7 +1509,77 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:34.000Z",
         "score": 1287.2,
-        "ilvl": 462.0
+        "ilvl": 462
+    },
+    {
+        "name": "Onitha",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Blood Elf",
+        "game_class": "Monk",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Windwalker",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:34.000Z",
+        "score": 0,
+        "ilvl": 394
+    },
+    {
+        "name": "Shockafeller",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Blood Elf",
+        "game_class": "Paladin",
+        "rank": 5,
+        "faction": "horde",
+        "active_spec": "Retribution",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:35.000Z",
+        "score": 0,
+        "ilvl": 394
+    },
+    {
+        "name": "Onith",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Orc",
+        "game_class": "Death Knight",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Unholy",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:33.000Z",
+        "score": 0,
+        "ilvl": 375
+    },
+    {
+        "name": "Nastygimp",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Blood Elf",
+        "game_class": "Warlock",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Demonology",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:37.000Z",
+        "score": 0,
+        "ilvl": 366
+    },
+    {
+        "name": "Shatterme",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Orc",
+        "game_class": "Mage",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Arcane",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-02-10T09:06:09.000Z",
+        "score": 285,
+        "ilvl": 434
     },
     {
         "name": "Kittysaur",
@@ -1148,6 +1596,34 @@
         "ilvl": 485.25
     },
     {
+        "name": "Trycki",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Blood Elf",
+        "game_class": "Demon Hunter",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Havoc",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:37.000Z",
+        "score": 0,
+        "ilvl": 379
+    },
+    {
+        "name": "Lareinadotit",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Nightborne",
+        "game_class": "Warlock",
+        "rank": 5,
+        "faction": "horde",
+        "active_spec": "Affliction",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-02-05T03:07:00.000Z",
+        "score": 0,
+        "ilvl": 387
+    },
+    {
         "name": "Obento",
         "region": "us",
         "realm": "Tichondrius",
@@ -1159,7 +1635,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:35.000Z",
         "score": 1233.5,
-        "ilvl": 445.0
+        "ilvl": 445
     },
     {
         "name": "Ðrenì",
@@ -1173,7 +1649,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:36.000Z",
         "score": 0,
-        "ilvl": 400.0
+        "ilvl": 400
     },
     {
         "name": "Addïe",
@@ -1187,7 +1663,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:33.000Z",
         "score": 0,
-        "ilvl": 397.0
+        "ilvl": 397
     },
     {
         "name": "Kazhp",
@@ -1199,9 +1675,9 @@
         "faction": "alliance",
         "active_spec": "Protection",
         "active_role": "TANK",
-        "last_crawled_at": "2024-02-05T00:56:44.000Z",
+        "last_crawled_at": "2024-02-10T19:00:57.000Z",
         "score": 0,
-        "ilvl": 413.0
+        "ilvl": 413
     },
     {
         "name": "Waterrboy",
@@ -1215,7 +1691,21 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-06T04:04:24.000Z",
         "score": 0,
-        "ilvl": 432.0
+        "ilvl": 432
+    },
+    {
+        "name": "Nanothresh",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dracthyr",
+        "game_class": "Evoker",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Devastation",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:33.000Z",
+        "score": 0,
+        "ilvl": 405
     },
     {
         "name": "Ponychu",
@@ -1229,7 +1719,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:37.000Z",
         "score": 0,
-        "ilvl": 432.0
+        "ilvl": 432
     },
     {
         "name": "Burntcheex",
@@ -1243,7 +1733,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:35.000Z",
         "score": 0,
-        "ilvl": 414.0
+        "ilvl": 414
     },
     {
         "name": "Daggidk",
@@ -1257,7 +1747,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:41.000Z",
         "score": 0,
-        "ilvl": 411.0
+        "ilvl": 411
     },
     {
         "name": "Daggiblast",
@@ -1271,7 +1761,63 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-28T18:56:23.000Z",
         "score": 0,
-        "ilvl": 444.0
+        "ilvl": 444
+    },
+    {
+        "name": "Daggiwar",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dark Iron Dwarf",
+        "game_class": "Warrior",
+        "rank": 6,
+        "faction": "alliance",
+        "active_spec": "Protection",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-01-11T09:56:38.000Z",
+        "score": 0,
+        "ilvl": 409
+    },
+    {
+        "name": "Gofigure",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Goblin",
+        "game_class": "Shaman",
+        "rank": 5,
+        "faction": "horde",
+        "active_spec": "Restoration",
+        "active_role": "HEALING",
+        "last_crawled_at": "2024-01-11T09:56:39.000Z",
+        "score": 0,
+        "ilvl": 416
+    },
+    {
+        "name": "Tyrellia",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Vulpera",
+        "game_class": "Hunter",
+        "rank": 5,
+        "faction": "horde",
+        "active_spec": "Beast Mastery",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:36.000Z",
+        "score": 0,
+        "ilvl": 385
+    },
+    {
+        "name": "Hysterectomy",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Undead",
+        "game_class": "Mage",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Frost",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:39.000Z",
+        "score": 0,
+        "ilvl": 410
     },
     {
         "name": "Brotheme",
@@ -1285,7 +1831,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:42.000Z",
         "score": 0,
-        "ilvl": 445.0
+        "ilvl": 445
     },
     {
         "name": "Skylonius",
@@ -1299,7 +1845,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:36.000Z",
         "score": 0,
-        "ilvl": 445.0
+        "ilvl": 445
     },
     {
         "name": "Porichu",
@@ -1313,7 +1859,35 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-01-11T09:56:36.000Z",
         "score": 0,
-        "ilvl": 445.0
+        "ilvl": 445
+    },
+    {
+        "name": "Xanarian",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dark Iron Dwarf",
+        "game_class": "Paladin",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Protection",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-01-11T09:56:35.000Z",
+        "score": 0,
+        "ilvl": 376
+    },
+    {
+        "name": "Moraydrena",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Blood Elf",
+        "game_class": "Paladin",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Protection",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-01-11T09:56:41.000Z",
+        "score": 0,
+        "ilvl": 398
     },
     {
         "name": "Feetfantasy",
@@ -1341,7 +1915,21 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:36.000Z",
         "score": 0,
-        "ilvl": 426.0
+        "ilvl": 426
+    },
+    {
+        "name": "Assasa",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Night Elf",
+        "game_class": "Rogue",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Outlaw",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:36.000Z",
+        "score": 0,
+        "ilvl": 430
     },
     {
         "name": "Nikitadragan",
@@ -1355,7 +1943,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-02-06T04:55:55.000Z",
         "score": 289.4,
-        "ilvl": 450.0
+        "ilvl": 450
     },
     {
         "name": "Twstedt",
@@ -1369,7 +1957,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:40.000Z",
         "score": 0,
-        "ilvl": 444.0
+        "ilvl": 444
     },
     {
         "name": "Mangotwstedt",
@@ -1383,7 +1971,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:36.000Z",
         "score": 0,
-        "ilvl": 444.0
+        "ilvl": 444
     },
     {
         "name": "Papatiyo",
@@ -1397,7 +1985,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:36.000Z",
         "score": 0,
-        "ilvl": 424.0
+        "ilvl": 424
     },
     {
         "name": "Freezekink",
@@ -1411,7 +1999,21 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:42.000Z",
         "score": 0,
-        "ilvl": 433.0
+        "ilvl": 433
+    },
+    {
+        "name": "Ybob",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Troll",
+        "game_class": "Druid",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Feral",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:37.000Z",
+        "score": 0,
+        "ilvl": 333
     },
     {
         "name": "Ndubtblybusn",
@@ -1425,7 +2027,7 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-01-11T09:56:31.000Z",
         "score": 0,
-        "ilvl": 434.0
+        "ilvl": 434
     },
     {
         "name": "Terpevoked",
@@ -1439,7 +2041,21 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-08T07:38:09.000Z",
         "score": 2901.7,
-        "ilvl": 481.0
+        "ilvl": 481
+    },
+    {
+        "name": "Cavepally",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dwarf",
+        "game_class": "Paladin",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Protection",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-01-11T09:56:40.000Z",
+        "score": 0,
+        "ilvl": 442
     },
     {
         "name": "Daggipriest",
@@ -1453,7 +2069,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:40.000Z",
         "score": 0,
-        "ilvl": 443.0
+        "ilvl": 443
     },
     {
         "name": "Creamypanty",
@@ -1467,7 +2083,35 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-02-04T21:18:06.000Z",
         "score": 0,
-        "ilvl": 425.0
+        "ilvl": 425
+    },
+    {
+        "name": "Ropmedaddy",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Blood Elf",
+        "game_class": "Monk",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Brewmaster",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-02-04T21:18:09.000Z",
+        "score": 0,
+        "ilvl": 398
+    },
+    {
+        "name": "Snakxx",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Tauren",
+        "game_class": "Hunter",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Beast Mastery",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:38.000Z",
+        "score": 0,
+        "ilvl": 180
     },
     {
         "name": "Bubblébuttz",
@@ -1481,7 +2125,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:37.000Z",
         "score": 0,
-        "ilvl": 432.0
+        "ilvl": 432
     },
     {
         "name": "Auraofbussy",
@@ -1495,7 +2139,63 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-02-04T21:18:08.000Z",
         "score": 3057.2,
-        "ilvl": 485.0
+        "ilvl": 485
+    },
+    {
+        "name": "Lockedcloset",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Undead",
+        "game_class": "Warlock",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Destruction",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:37.000Z",
+        "score": 0,
+        "ilvl": 381
+    },
+    {
+        "name": "Staythicc",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Troll",
+        "game_class": "Mage",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Fire",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:41.000Z",
+        "score": 0,
+        "ilvl": 410
+    },
+    {
+        "name": "Tehpain",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Night Elf",
+        "game_class": "Priest",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Shadow",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:35.000Z",
+        "score": 0,
+        "ilvl": 402
+    },
+    {
+        "name": "Daggismere",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Zandalari Troll",
+        "game_class": "Paladin",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Holy",
+        "active_role": "HEALING",
+        "last_crawled_at": "2024-01-11T09:56:41.000Z",
+        "score": 0,
+        "ilvl": 387
     },
     {
         "name": "Sellfeetpics",
@@ -1509,7 +2209,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-07T18:35:45.000Z",
         "score": 3124.9,
-        "ilvl": 486.0
+        "ilvl": 486
     },
     {
         "name": "Strokemytoté",
@@ -1523,7 +2223,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:38.000Z",
         "score": 0,
-        "ilvl": 445.0
+        "ilvl": 445
     },
     {
         "name": "Fistinhomies",
@@ -1551,7 +2251,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:40.000Z",
         "score": 3196.8,
-        "ilvl": 480.0
+        "ilvl": 480
     },
     {
         "name": "Lumiels",
@@ -1565,7 +2265,35 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-06T04:56:06.000Z",
         "score": 1975.6,
-        "ilvl": 470.0
+        "ilvl": 470
+    },
+    {
+        "name": "Bigtwist",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dark Iron Dwarf",
+        "game_class": "Monk",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Brewmaster",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-01-11T09:56:39.000Z",
+        "score": 0,
+        "ilvl": 416
+    },
+    {
+        "name": "Stoleurghoul",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Orc",
+        "game_class": "Death Knight",
+        "rank": 5,
+        "faction": "horde",
+        "active_spec": "Frost",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:31.000Z",
+        "score": 0,
+        "ilvl": 430
     },
     {
         "name": "Snakexx",
@@ -1593,7 +2321,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:39.000Z",
         "score": 0,
-        "ilvl": 444.0
+        "ilvl": 444
     },
     {
         "name": "Lennybâr",
@@ -1607,7 +2335,21 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:38.000Z",
         "score": 0,
-        "ilvl": 444.0
+        "ilvl": 444
+    },
+    {
+        "name": "Holyshockerr",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dwarf",
+        "game_class": "Paladin",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Holy",
+        "active_role": "HEALING",
+        "last_crawled_at": "2024-01-16T14:14:18.000Z",
+        "score": 0,
+        "ilvl": 279
     },
     {
         "name": "Ashenrho",
@@ -1621,7 +2363,21 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-19T01:08:00.000Z",
         "score": 0,
-        "ilvl": 238.0
+        "ilvl": 238
+    },
+    {
+        "name": "Darcair",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Nightborne",
+        "game_class": "Mage",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Fire",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:30.000Z",
+        "score": 0,
+        "ilvl": 373
     },
     {
         "name": "Pwrinfusion",
@@ -1635,7 +2391,35 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-02-04T21:18:08.000Z",
         "score": 2732.7,
-        "ilvl": 482.0
+        "ilvl": 482
+    },
+    {
+        "name": "Goldnponyboi",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Zandalari Troll",
+        "game_class": "Paladin",
+        "rank": 6,
+        "faction": "horde",
+        "active_spec": "Retribution",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:38.000Z",
+        "score": 0,
+        "ilvl": 367
+    },
+    {
+        "name": "Verynotgood",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Void Elf",
+        "game_class": "Mage",
+        "rank": 6,
+        "faction": "alliance",
+        "active_spec": "Frost",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:39.000Z",
+        "score": 0,
+        "ilvl": 399
     },
     {
         "name": "Chillenmac",
@@ -1649,7 +2433,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:44.000Z",
         "score": 165,
-        "ilvl": 442.0
+        "ilvl": 442
     },
     {
         "name": "Hidethechild",
@@ -1663,7 +2447,21 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-04T21:18:11.000Z",
         "score": 0,
-        "ilvl": 101.0
+        "ilvl": 101
+    },
+    {
+        "name": "Mobpim",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Blood Elf",
+        "game_class": "Rogue",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Outlaw",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-02-09T04:39:08.000Z",
+        "score": 2704.7,
+        "ilvl": 475
     },
     {
         "name": "Weshouldkiss",
@@ -1677,7 +2475,21 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-04T21:18:12.000Z",
         "score": 216.3,
-        "ilvl": 446.0
+        "ilvl": 446
+    },
+    {
+        "name": "Ait",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dwarf",
+        "game_class": "Paladin",
+        "rank": 6,
+        "faction": "alliance",
+        "active_spec": "Retribution",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:41.000Z",
+        "score": 1293.4,
+        "ilvl": 455
     },
     {
         "name": "Palistute",
@@ -1691,7 +2503,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:41.000Z",
         "score": 0,
-        "ilvl": 454.0
+        "ilvl": 454
     },
     {
         "name": "Beamsham",
@@ -1705,7 +2517,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-18T02:36:08.000Z",
         "score": 0,
-        "ilvl": 445.0
+        "ilvl": 445
     },
     {
         "name": "Manodediablo",
@@ -1719,7 +2531,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:41.000Z",
         "score": 0,
-        "ilvl": 436.0
+        "ilvl": 436
     },
     {
         "name": "Teknofreak",
@@ -1733,7 +2545,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-05T03:07:02.000Z",
         "score": 693.5,
-        "ilvl": 454.0
+        "ilvl": 454
     },
     {
         "name": "Cowboyjj",
@@ -1747,7 +2559,21 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:27.000Z",
         "score": 543.9,
-        "ilvl": 441.0
+        "ilvl": 441
+    },
+    {
+        "name": "Gothers",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dark Iron Dwarf",
+        "game_class": "Warlock",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Affliction",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-16T14:14:20.000Z",
+        "score": 0,
+        "ilvl": 349
     },
     {
         "name": "Clior",
@@ -1761,7 +2587,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:40.000Z",
         "score": 0,
-        "ilvl": 439.0
+        "ilvl": 439
     },
     {
         "name": "Pumpkinspice",
@@ -1775,7 +2601,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:42.000Z",
         "score": 0,
-        "ilvl": 423.0
+        "ilvl": 423
     },
     {
         "name": "Trogment",
@@ -1789,7 +2615,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-09T01:07:29.000Z",
         "score": 3297.2,
-        "ilvl": 486.0
+        "ilvl": 486
     },
     {
         "name": "Trogshifty",
@@ -1803,7 +2629,21 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-02-09T01:55:45.000Z",
         "score": 0,
-        "ilvl": 447.0
+        "ilvl": 447
+    },
+    {
+        "name": "Hoofndagger",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Tauren",
+        "game_class": "Rogue",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Outlaw",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-16T14:14:17.000Z",
+        "score": 0,
+        "ilvl": 29
     },
     {
         "name": "Cadaavr",
@@ -1817,7 +2657,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-06T04:56:40.000Z",
         "score": 1844.1,
-        "ilvl": 468.0
+        "ilvl": 468
     },
     {
         "name": "Clyor",
@@ -1831,7 +2671,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:41.000Z",
         "score": 0,
-        "ilvl": 440.0
+        "ilvl": 440
     },
     {
         "name": "Trashenabler",
@@ -1845,7 +2685,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-04T21:18:10.000Z",
         "score": 1315.9,
-        "ilvl": 455.0
+        "ilvl": 455
     },
     {
         "name": "Ikisshomies",
@@ -1859,7 +2699,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-04T21:18:09.000Z",
         "score": 0,
-        "ilvl": 444.0
+        "ilvl": 444
     },
     {
         "name": "Sacerdous",
@@ -1873,7 +2713,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-09T07:09:51.000Z",
         "score": 2564.2,
-        "ilvl": 479.0
+        "ilvl": 479
     },
     {
         "name": "Coconene",
@@ -1887,7 +2727,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-01-11T09:56:43.000Z",
         "score": 1252.2,
-        "ilvl": 456.0
+        "ilvl": 456
     },
     {
         "name": "Miyatee",
@@ -1901,7 +2741,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-06T04:56:17.000Z",
         "score": 2600.3,
-        "ilvl": 477.0
+        "ilvl": 477
     },
     {
         "name": "Legitblind",
@@ -1915,7 +2755,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-06T04:04:25.000Z",
         "score": 2002.1,
-        "ilvl": 474.0
+        "ilvl": 474
     },
     {
         "name": "Yogî",
@@ -1929,7 +2769,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-06T04:56:53.000Z",
         "score": 2832.4,
-        "ilvl": 486.0
+        "ilvl": 486
     },
     {
         "name": "Grîp",
@@ -1943,7 +2783,7 @@
         "active_role": "TANK",
         "last_crawled_at": "2024-02-06T20:27:48.000Z",
         "score": 2175.8,
-        "ilvl": 478.0
+        "ilvl": 478
     },
     {
         "name": "Beamsdh",
@@ -1960,6 +2800,20 @@
         "ilvl": 487.125
     },
     {
+        "name": "Ahrixes",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dracthyr",
+        "game_class": "Evoker",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Devastation",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:41.000Z",
+        "score": 0,
+        "ilvl": 229
+    },
+    {
         "name": "Cryptopalli",
         "region": "us",
         "realm": "Tichondrius",
@@ -1971,7 +2825,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-09T05:17:37.000Z",
         "score": 3038.1,
-        "ilvl": 484.0
+        "ilvl": 484
     },
     {
         "name": "Boyardaddy",
@@ -1985,7 +2839,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-09T01:52:11.000Z",
         "score": 3238.8,
-        "ilvl": 488.0
+        "ilvl": 488
     },
     {
         "name": "Warrdoggy",
@@ -1999,7 +2853,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:44.000Z",
         "score": 850.9,
-        "ilvl": 461.0
+        "ilvl": 461
     },
     {
         "name": "Badðragøn",
@@ -2013,7 +2867,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:41.000Z",
         "score": 801.4,
-        "ilvl": 442.0
+        "ilvl": 442
     },
     {
         "name": "Shalayley",
@@ -2027,7 +2881,21 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-02-08T12:51:48.000Z",
         "score": 696.8,
-        "ilvl": 468.0
+        "ilvl": 468
+    },
+    {
+        "name": "Dakkuu",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Orc",
+        "game_class": "Monk",
+        "rank": 7,
+        "faction": "horde",
+        "active_spec": "Brewmaster",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-01-28T18:56:27.000Z",
+        "score": 2168.1,
+        "ilvl": 471
     },
     {
         "name": "Trogalicious",
@@ -2055,7 +2923,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-11T09:56:44.000Z",
         "score": 0,
-        "ilvl": 425.0
+        "ilvl": 425
     },
     {
         "name": "Magicbussy",
@@ -2068,8 +2936,8 @@
         "active_spec": "Frost",
         "active_role": "DPS",
         "last_crawled_at": "2024-02-10T01:51:46.000Z",
-        "score": 3338.5,
-        "ilvl": 485.0
+        "score": 3352.2,
+        "ilvl": 485.812
     },
     {
         "name": "Rampageme",
@@ -2081,9 +2949,9 @@
         "faction": "alliance",
         "active_spec": "Protection",
         "active_role": "TANK",
-        "last_crawled_at": "2024-02-09T22:23:20.000Z",
-        "score": 2806.8,
-        "ilvl": 483.0
+        "last_crawled_at": "2024-02-10T20:21:01.000Z",
+        "score": 2814.6,
+        "ilvl": 483
     },
     {
         "name": "Eviscerateme",
@@ -2095,9 +2963,9 @@
         "faction": "alliance",
         "active_spec": "Assassination",
         "active_role": "DPS",
-        "last_crawled_at": "2024-02-05T19:07:44.000Z",
+        "last_crawled_at": "2024-02-10T19:00:55.000Z",
         "score": 1653.7,
-        "ilvl": 460.0
+        "ilvl": 460
     },
     {
         "name": "Rastnick",
@@ -2111,7 +2979,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-03T10:10:16.000Z",
         "score": 1897.1,
-        "ilvl": 466.0
+        "ilvl": 466
     },
     {
         "name": "Thecrazzed",
@@ -2121,11 +2989,11 @@
         "game_class": "Warrior",
         "rank": 4,
         "faction": "horde",
-        "active_spec": "Fury",
+        "active_spec": "Arms",
         "active_role": "DPS",
-        "last_crawled_at": "2024-02-09T01:34:41.000Z",
-        "score": 2402.8,
-        "ilvl": 479.0
+        "last_crawled_at": "2024-02-10T07:05:46.000Z",
+        "score": 2488.4,
+        "ilvl": 479
     },
     {
         "name": "Igotcake",
@@ -2139,7 +3007,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-01-23T21:25:10.000Z",
         "score": 2530.1,
-        "ilvl": 476.0
+        "ilvl": 476
     },
     {
         "name": "Daggidh",
@@ -2165,9 +3033,23 @@
         "faction": "alliance",
         "active_spec": "Holy",
         "active_role": "HEALING",
-        "last_crawled_at": "2024-02-06T03:16:12.000Z",
+        "last_crawled_at": "2024-02-10T06:47:52.000Z",
         "score": 3109.9,
-        "ilvl": 486.0
+        "ilvl": 486
+    },
+    {
+        "name": "Larcana",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Void Elf",
+        "game_class": "Mage",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Arcane",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-11T09:56:40.000Z",
+        "score": 0,
+        "ilvl": 151
     },
     {
         "name": "Azøz",
@@ -2179,9 +3061,9 @@
         "faction": "horde",
         "active_spec": "Mistweaver",
         "active_role": "HEALING",
-        "last_crawled_at": "2024-02-10T02:47:49.000Z",
-        "score": 3139.3,
-        "ilvl": 485.25
+        "last_crawled_at": "2024-02-10T09:22:48.000Z",
+        "score": 3179.6,
+        "ilvl": 485
     },
     {
         "name": "Stillnippy",
@@ -2193,9 +3075,9 @@
         "faction": "alliance",
         "active_spec": "Frost",
         "active_role": "DPS",
-        "last_crawled_at": "2024-02-08T12:07:54.000Z",
+        "last_crawled_at": "2024-02-10T19:00:57.000Z",
         "score": 2874.7,
-        "ilvl": 484.0
+        "ilvl": 484
     },
     {
         "name": "Uhmazingz",
@@ -2223,7 +3105,21 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-02-09T01:11:45.000Z",
         "score": 2745.2,
-        "ilvl": 451.0
+        "ilvl": 451
+    },
+    {
+        "name": "Mistyoumuch",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Night Elf",
+        "game_class": "Monk",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Mistweaver",
+        "active_role": "HEALING",
+        "last_crawled_at": "2024-01-11T09:56:46.000Z",
+        "score": 0,
+        "ilvl": 445
     },
     {
         "name": "Trognaughty",
@@ -2237,7 +3133,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-02-09T01:01:39.000Z",
         "score": 2539.8,
-        "ilvl": 479.0
+        "ilvl": 479
     },
     {
         "name": "Notgayxd",
@@ -2261,11 +3157,11 @@
         "game_class": "Demon Hunter",
         "rank": 4,
         "faction": "horde",
-        "active_spec": "Havoc",
-        "active_role": "DPS",
-        "last_crawled_at": "2024-02-10T01:55:45.000Z",
-        "score": 3349.1,
-        "ilvl": 485.0
+        "active_spec": "Vengeance",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-02-10T07:10:43.000Z",
+        "score": 3349.2,
+        "ilvl": 485
     },
     {
         "name": "Kriataa",
@@ -2279,7 +3175,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-06T04:57:51.000Z",
         "score": 2037.3,
-        "ilvl": 472.0
+        "ilvl": 472
     },
     {
         "name": "Ashenxi",
@@ -2307,7 +3203,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-07T04:06:09.000Z",
         "score": 1790.8,
-        "ilvl": 473.0
+        "ilvl": 473
     },
     {
         "name": "Sigs",
@@ -2321,7 +3217,21 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-02-10T02:45:01.000Z",
         "score": 3184.9,
-        "ilvl": 486.0
+        "ilvl": 486.562
+    },
+    {
+        "name": "Asthus",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Mechagnome",
+        "game_class": "Warlock",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Demonology",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-02-05T03:07:11.000Z",
+        "score": 550.7,
+        "ilvl": 454
     },
     {
         "name": "Unførtunate",
@@ -2333,9 +3243,9 @@
         "faction": "alliance",
         "active_spec": "Outlaw",
         "active_role": "DPS",
-        "last_crawled_at": "2024-02-08T06:43:35.000Z",
-        "score": 3062.5,
-        "ilvl": 484.0
+        "last_crawled_at": "2024-02-10T07:39:41.000Z",
+        "score": 3065.5,
+        "ilvl": 484
     },
     {
         "name": "Inferiør",
@@ -2349,7 +3259,7 @@
         "active_role": "DPS",
         "last_crawled_at": "2024-02-08T20:05:01.000Z",
         "score": 3052.8,
-        "ilvl": 484.0
+        "ilvl": 484
     },
     {
         "name": "Runescapeing",
@@ -2361,9 +3271,23 @@
         "faction": "alliance",
         "active_spec": "Fury",
         "active_role": "DPS",
-        "last_crawled_at": "2024-02-06T04:58:10.000Z",
-        "score": 2134.9,
-        "ilvl": 478.062
+        "last_crawled_at": "2024-02-10T20:14:56.000Z",
+        "score": 2374.2,
+        "ilvl": 478
+    },
+    {
+        "name": "Beamblink",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Night Elf",
+        "game_class": "Mage",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": null,
+        "active_role": null,
+        "last_crawled_at": "2017-01-19T00:00:00.000Z",
+        "score": 261.3,
+        "ilvl": 476.375
     },
     {
         "name": "Kazdh",
@@ -2373,11 +3297,25 @@
         "game_class": "Demon Hunter",
         "rank": 2,
         "faction": "alliance",
-        "active_spec": "Havoc",
-        "active_role": "DPS",
-        "last_crawled_at": "2024-02-09T09:19:35.000Z",
+        "active_spec": "Vengeance",
+        "active_role": "TANK",
+        "last_crawled_at": "2024-02-10T19:00:56.000Z",
         "score": 2989.3,
-        "ilvl": 484.0
+        "ilvl": 484
+    },
+    {
+        "name": "Misførtune",
+        "region": "us",
+        "realm": "Tichondrius",
+        "race": "Dwarf",
+        "game_class": "Paladin",
+        "rank": 7,
+        "faction": "alliance",
+        "active_spec": "Retribution",
+        "active_role": "DPS",
+        "last_crawled_at": "2024-01-29T23:21:49.000Z",
+        "score": 0,
+        "ilvl": 433
     },
     {
         "name": "Babyoscar",
@@ -2391,7 +3329,7 @@
         "active_role": "HEALING",
         "last_crawled_at": "2024-02-10T02:49:36.000Z",
         "score": 2817,
-        "ilvl": 483.0
+        "ilvl": 483
     },
     {
         "name": "Kazslave",
@@ -2403,8 +3341,8 @@
         "faction": "alliance",
         "active_spec": "Havoc",
         "active_role": "DPS",
-        "last_crawled_at": "2024-02-09T23:09:43.000Z",
-        "score": 2885.1,
-        "ilvl": 478.0
+        "last_crawled_at": "2024-02-10T06:16:11.000Z",
+        "score": 2894.5,
+        "ilvl": 478
     }
 ]

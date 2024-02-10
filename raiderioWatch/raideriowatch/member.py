@@ -7,10 +7,10 @@ class Member(BaseModel):
     name: str
     region: str
     realm: str
-    race: str
-    game_class: str
-    rank: int
-    faction: str 
+    race: Optional[str]
+    game_class: Optional[str]
+    rank: Optional[int]
+    faction: Optional[str] 
     active_spec: Optional[str] = None
     active_role: Optional[str] = None
     last_crawled_at: Optional[str] = None
