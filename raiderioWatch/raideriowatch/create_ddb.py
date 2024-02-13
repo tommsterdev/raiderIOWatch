@@ -6,7 +6,7 @@ from botocore.exceptions import ClientError
 
 from typing import Any, Dict, List, Optional
 from member import Member
-from utils import create_member_item, ITEM, ATTRIBUTE
+from utils import parse_unprocessed_items, create_member_item, ITEM, ATTRIBUTE
 
 
 logger = logging.getLogger(__name__)
@@ -122,15 +122,18 @@ class DDBTable:
         items: Dict[str, ITEM] = {'Item':create_member_item(member) for member in members}
         requests = {'PutRequest':item for item in items}
         table_name: str = self.table_name
-        requested_items=
-        'PutRequest'
         
         try:
             response = self.batch_write_item(
                 RequestItems= {
-                    self.table_name : [create_member_item(member) for member in members]
-                }
+                    self.table_name : [requests]
+                },
+                ReturnConsumedCapacity='INDEXES'|'TOTAL'|'NONE',
+                ReturnItemCollectionMetrics='SIZE'|'NONE'
             )
+            if response.get('UnprocessedItems', None):
+                unprocessed_members = parse_unprocessed_items(response['UnprocessedItems'])
+
         except ClientError as e:
             logger.error(
                 "Couldn't add character %s to table %s. Reason: %s: %s",
@@ -140,6 +143,8 @@ class DDBTable:
                 e.resopnse["Error"]["Message"],
             )
             raise
+        else:
+            return unprocessed_members
 
     def get_member(self, name: str, score: int) -> Dict[str, int]:
         """

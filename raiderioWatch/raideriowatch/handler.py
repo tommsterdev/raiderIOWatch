@@ -1,45 +1,50 @@
 import json
-from pydantic import BaseModel
-from typing import Optional
+import logging
+import asyncio
+import httpx
 
+from typing import List, Tuple, Dict
+
+from member import Member
 from guild_crawler import get_guild
-from member import Member, create_member_from_request
-from member_crawler import get_members
+from utils import write_members, parse_data
+from requests import httpx_get, JSONObject
+from time import perf_counter
 
 
 async def runner():
 
-    guild_data: List[Member] = get_guild()
+    async with httpx.AsyncClient() as client:
+        guild_data: List[Member] = await get_guild(client)
 
-    crawled_members: List[Member] = await asyncio.gather(
-        *[crawl_member(member) for member in guild_data]
-    )
+    # filter inactive members:
+    active_members = [member for member in guild_data if member.rank <= 4]
 
-    output_file = "pydantic_data_with_scores.json"
+    elapsed = perf_counter() - start
+    print(f"get guild execution time: {elapsed:.2f} seconds")
+
+    print(f"getting member data...")
+    async with httpx.AsyncClient() as client:
+        crawled_members: List[Member] = await asyncio.gather(
+            *[crawl_member(member, client) for member in guild_data]
+        )
+
+    elapsed = perf_counter() - start
+    print(f"crawl_members execution time: {elapsed:.2f} seconds")
+
     members_json = [member.model_dump() for member in crawled_members]
-    write_members(members=members_json, output_file=output_file)
+    #TODO: update ddb
+
+
+    elapsed = perf_counter() - start
+    print(f"dump objects and write to file execution time: {elapsed:.2f} seconds")
 
 
 def lambda_hander(event, context) -> Dict[str, Any]:
 
     asyncio.run(runner())
-    try:
-        guild_data = get_guild()
-        members = [
-            create_member_from_request(member).model_dump() for member in guild_data
-        ]
-        crawled_members = get_members(members)
-        # TODO : WRITE TO DDB
-        output = event["output_file"]
-        """
-        TODO:
-
-        put / update members to dynamodb table or local file
-        return
-        """
-        return {
+   
+    return {
             "statusCode": 200,
-            "body": json.dumps({"num_members": len(crawled_emmbers)}),
+            "body": json.dumps(event),
         }
-    except ClientError as e:
-        return {"statusCode": 500, "body": str(e)}
