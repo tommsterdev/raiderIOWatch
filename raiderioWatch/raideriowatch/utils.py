@@ -21,12 +21,14 @@ PARTITION_KEY = "PARTITION_KEY"
 # ***********************************
 
 
-#types
+# types
 ATTRIBUTE = Dict[str, str | float | int | None]
 ITEM = Dict[str, ATTRIBUTE]
 
+
 def create_member_item_from_list(members: List[Member]) -> List[ITEM]:
-    return  [create_member_item(member) for member in members]
+    return [create_member_item(member) for member in members]
+
 
 def create_member_item(member: Member) -> ITEM:
     """
@@ -44,7 +46,6 @@ def create_member_item(member: Member) -> ITEM:
         "faction": {"S": member.faction},
         "active_spec": {"S": member.active_spec},
         "active_role": {"S": member.active_role},
-
     }
     return Item
 
@@ -70,71 +71,13 @@ def extract_member_item(item: Dict[str, Dict[str, Any]]) -> Member:
     return Member(**char_item)
 
 
-def ddb_put_item(table_name: str, item: Dict[str, Any]) -> None:
+def chunks(items: List[ITEM], chunk_size: int = 25) -> List[ITEM]:
     """
-    adds a generic item  to the dynamodb table.
-
-    param name: character name
+    yield chunk_size chunks from list
     """
-    # construct ddb item
-    ddb_item = creater_member_item(item)
-    try:
-        response = ddb.put_item(TableName=table_name, Item=ddb_item)
-        logging.info(response)
-    except ClientError as e:
-        logger.error(
-            "Error adding item %s to table %s. Reason: %s: %s",
-            ddb_item,
-            self.table.name,
-            e.response["Error"]["Code"],
-            e.resopnse["Error"]["Message"],
-        )
-        raise
-
-
-# TODO: make generic
-def ddb_update_item(
-    table_name: str, pk: str, sk: str | None, item: Dict[str, Any]
-) -> None:
-
-    try:
-
-        key = {
-            pk: {"S": item["character"]},
-        }
-        response = ddb.update_item(
-            TableName=table_name,
-            Key=key,
-            UpdateExpression="SET score = :score",
-            ExpressionAttributeValues={
-                ":score": {"N": str(item["score"])},
-            },
-            ReturnValues="ALL_NEW",
-        )
-
-        # extract the updated attributes from the response
-        updated_attributes = response.get("Attributes", {})
-        return {"statusCode": 200, "body": updated_attributes}
-    except Exception as e:
-        return {
-            "statusCode": 500,
-            "body": str(e),
-        }
-
-
-def query_ddb_entry(partition_value: Any) -> Dict[str, Any]:
-    try:
-        # query dynamodb table
-        resp = ddb.query(
-            TableName=TABLE_NAME,
-            KeyConditionExpression=f"#{PARTITION_KEY} = :{PARTITION_VALUE}",
-            ExpressionAttributeNames={f"#{PARTITION_KEY}": f"{PARTITION_VALUE}"},
-            ExpressionAttributeValues={f":{PARTITION_VALUE}": {"S": partition_value}},
-        )
-    except Exception as e:
-        return {"statusCode": 500, "body": str(e)}
-    else:
-        return resp
+    for i in range(0, len(items), chunk_size):
+        logging.debug(f"yielding chunk: {items[i: i+chunk_size]}\n")
+        yield items[i : i + chunk_size]
 
 
 def sns_publish(attributes: Dict[str, Any]) -> None:
@@ -175,7 +118,10 @@ def parse_data(data: Dict[str, Any]) -> (float, float):
 
     return score, ilvl
 
-def parse_unprocessed_items(unprocessed_items: Dict[str, List[Dict[str, ITEM]]]) -> list[Member]:
+
+def parse_unprocessed_items(
+    unprocessed_items: Dict[str, List[Dict[str, ITEM]]]
+) -> list[Member]:
     """
     unprocessed_items structure:
     'UnprocessedItems': {
@@ -211,21 +157,20 @@ def parse_unprocessed_items(unprocessed_items: Dict[str, List[Dict[str, ITEM]]])
     pass
 
 
-
 def load_data() -> List[Member]:
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
         data = json.load(f)
     return [Member(**member) for member in data]
 
+
 def write_item_to_file(items: Dict[str, ITEM], output_file: str) -> None:
     logging.debug(items)
     with open(output_file, "w", encoding="utf-8") as f:
         for item in items:
-            logging.debug(f'writing item: {item}')
-            item_dict = {'Item': item}
-            logging.debug(f'item_dict == {item_dict.items()}')
-            f.writelines(json.dumps(item_dict, ensure_ascii=False, indent=1) + '\n')
-            
+            logging.debug(f"writing item: {item}")
+            item_dict = {"Item": item}
+            logging.debug(f"item_dict == {item_dict.items()}")
+            f.writelines(json.dumps(item_dict, ensure_ascii=False, indent=1) + "\n")
 
 
 def write_members(members: List[Dict[str, Any]], output_file: str) -> None:

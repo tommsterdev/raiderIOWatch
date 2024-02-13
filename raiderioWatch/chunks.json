@@ -1,0 +1,777 @@
+{
+ "Item": {
+  "character": {
+   "S": "Rastnick"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "1897.1"
+  },
+  "ilvl": {
+   "N": "466"
+  },
+  "race": {
+   "S": "Blood Elf"
+  },
+  "game_class": {
+   "S": "Demon Hunter"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "horde"
+  },
+  "active_spec": {
+   "S": "Havoc"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Thecrazzed"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "2493.7"
+  },
+  "ilvl": {
+   "N": "479.438"
+  },
+  "race": {
+   "S": "Zandalari Troll"
+  },
+  "game_class": {
+   "S": "Warrior"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "horde"
+  },
+  "active_spec": {
+   "S": "Arms"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Igotcake"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "2530.1"
+  },
+  "ilvl": {
+   "N": "476"
+  },
+  "race": {
+   "S": "Blood Elf"
+  },
+  "game_class": {
+   "S": "Rogue"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "horde"
+  },
+  "active_spec": {
+   "S": "Outlaw"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Daggidh"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "3239.2"
+  },
+  "ilvl": {
+   "N": "485"
+  },
+  "race": {
+   "S": "Night Elf"
+  },
+  "game_class": {
+   "S": "Demon Hunter"
+  },
+  "rank": {
+   "N": "2"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Havoc"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Dwinelle"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "3118.2"
+  },
+  "ilvl": {
+   "N": "486"
+  },
+  "race": {
+   "S": "Human"
+  },
+  "game_class": {
+   "S": "Paladin"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Holy"
+  },
+  "active_role": {
+   "S": "HEALING"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Azøz"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "3220.2"
+  },
+  "ilvl": {
+   "N": "485"
+  },
+  "race": {
+   "S": "Orc"
+  },
+  "game_class": {
+   "S": "Monk"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "horde"
+  },
+  "active_spec": {
+   "S": "Mistweaver"
+  },
+  "active_role": {
+   "S": "HEALING"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Stillnippy"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "2898.2"
+  },
+  "ilvl": {
+   "N": "484"
+  },
+  "race": {
+   "S": "Night Elf"
+  },
+  "game_class": {
+   "S": "Mage"
+  },
+  "rank": {
+   "N": "2"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Frost"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Uhmazingz"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "3113.7"
+  },
+  "ilvl": {
+   "N": "485"
+  },
+  "race": {
+   "S": "Night Elf"
+  },
+  "game_class": {
+   "S": "Demon Hunter"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Havoc"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Trognasty"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "2745.2"
+  },
+  "ilvl": {
+   "N": "477"
+  },
+  "race": {
+   "S": "Night Elf"
+  },
+  "game_class": {
+   "S": "Priest"
+  },
+  "rank": {
+   "N": "3"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Shadow"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Trognaughty"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "2539.8"
+  },
+  "ilvl": {
+   "N": "479"
+  },
+  "race": {
+   "S": "Night Elf"
+  },
+  "game_class": {
+   "S": "Monk"
+  },
+  "rank": {
+   "N": "3"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Mistweaver"
+  },
+  "active_role": {
+   "S": "HEALING"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Notgayxd"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "2924.2"
+  },
+  "ilvl": {
+   "N": "487"
+  },
+  "race": {
+   "S": "Dark Iron Dwarf"
+  },
+  "game_class": {
+   "S": "Warlock"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Demonology"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Kriataa"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "2037.3"
+  },
+  "ilvl": {
+   "N": "473"
+  },
+  "race": {
+   "S": "Zandalari Troll"
+  },
+  "game_class": {
+   "S": "Warlock"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "horde"
+  },
+  "active_spec": {
+   "S": "Demonology"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Ashenxi"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "2128.6"
+  },
+  "ilvl": {
+   "N": "475.812"
+  },
+  "race": {
+   "S": "Dwarf"
+  },
+  "game_class": {
+   "S": "Paladin"
+  },
+  "rank": {
+   "N": "2"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Protection"
+  },
+  "active_role": {
+   "S": "TANK"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Bigtroggy"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "1790.8"
+  },
+  "ilvl": {
+   "N": "473"
+  },
+  "race": {
+   "S": "Orc"
+  },
+  "game_class": {
+   "S": "Rogue"
+  },
+  "rank": {
+   "N": "3"
+  },
+  "faction": {
+   "S": "horde"
+  },
+  "active_spec": {
+   "S": "Outlaw"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Sigs"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "3218.9"
+  },
+  "ilvl": {
+   "N": "486"
+  },
+  "race": {
+   "S": "Orc"
+  },
+  "game_class": {
+   "S": "Shaman"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "horde"
+  },
+  "active_spec": {
+   "S": "Restoration"
+  },
+  "active_role": {
+   "S": "HEALING"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Unførtunate"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "3079.2"
+  },
+  "ilvl": {
+   "N": "484"
+  },
+  "race": {
+   "S": "Dwarf"
+  },
+  "game_class": {
+   "S": "Rogue"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Outlaw"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Inferiør"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "3052.8"
+  },
+  "ilvl": {
+   "N": "484"
+  },
+  "race": {
+   "S": "Dwarf"
+  },
+  "game_class": {
+   "S": "Mage"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Fire"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Runescapeing"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "2486.9"
+  },
+  "ilvl": {
+   "N": "481"
+  },
+  "race": {
+   "S": "Night Elf"
+  },
+  "game_class": {
+   "S": "Warrior"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Arms"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Kazdh"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "3002.2"
+  },
+  "ilvl": {
+   "N": "484"
+  },
+  "race": {
+   "S": "Night Elf"
+  },
+  "game_class": {
+   "S": "Demon Hunter"
+  },
+  "rank": {
+   "N": "2"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Vengeance"
+  },
+  "active_role": {
+   "S": "TANK"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Babyoscar"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "2829.8"
+  },
+  "ilvl": {
+   "N": "483"
+  },
+  "race": {
+   "S": "Night Elf"
+  },
+  "game_class": {
+   "S": "Druid"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Guardian"
+  },
+  "active_role": {
+   "S": "TANK"
+  }
+ }
+}
+{
+ "Item": {
+  "character": {
+   "S": "Kazslave"
+  },
+  "realm": {
+   "S": "Tichondrius"
+  },
+  "region": {
+   "S": "us"
+  },
+  "score": {
+   "N": "2928.4"
+  },
+  "ilvl": {
+   "N": "480"
+  },
+  "race": {
+   "S": "Night Elf"
+  },
+  "game_class": {
+   "S": "Demon Hunter"
+  },
+  "rank": {
+   "N": "4"
+  },
+  "faction": {
+   "S": "alliance"
+  },
+  "active_spec": {
+   "S": "Havoc"
+  },
+  "active_role": {
+   "S": "DPS"
+  }
+ }
+}

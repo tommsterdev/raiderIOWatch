@@ -1,3 +1,0 @@
-"""
-Dynamo DB CRUD operations
-"""

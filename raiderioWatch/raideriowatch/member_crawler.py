@@ -9,17 +9,23 @@ from dotenv import load_dotenv
 
 from member import Member
 from guild_crawler import get_guild
-from utils import write_members, parse_data, create_member_item_from_list, ITEM, write_item_to_file
+from utils import (
+    write_members,
+    parse_data,
+    create_member_item_from_list,
+    ITEM,
+    write_item_to_file,
+    chunks,
+)
 from requests import httpx_get, JSONObject
 from time import perf_counter
 
 
 logging.basicConfig(
-    filename='debug.log',
+    filename="debug.log",
     level=logging.DEBUG,
-    format='%(asctime)s %(levelname)s %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S',
-    
+    format="%(asctime)s %(levelname)s %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
 )
 
 load_dotenv()
@@ -99,12 +105,19 @@ async def main() -> None:
 
     elapsed = perf_counter() - start
     print(f"crawl_members execution time: {elapsed:.2f} seconds")
-    logging.info(f'logging time elapsed = {elapsed} seconds')
+    logging.info(f"logging time elapsed = {elapsed} seconds")
     output_file = "pydantic_data.json"
-    #convert members to ddb compatible Items 
+    # convert members to ddb compatible Items
     member_items: List[ITEM] = create_member_item_from_list(crawled_members)
-    logging.info(f'member items : {member_items}')
-    write_item_to_file(member_items, output_file='ddb_fomat_data.json')
+    logging.info(f"member items : {member_items}")
+    # chunk data
+    chunk = chunks(items=member_items)
+    while chunk:
+        try:
+            write_item_to_file(next(chunk), output_file="chunks.json")
+        except StopIteration:
+            break
+    write_item_to_file(member_items, output_file="ddb_fomat_data.json")
 
     write_members(members=member_items, output_file=output_file)
 

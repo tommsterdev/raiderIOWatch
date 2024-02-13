@@ -15,7 +15,6 @@ load_dotenv()
 
 GUILD_URL = os.getenv("GUILD_URL")
 GUILD_NAME = os.getenv("GUILD_NAME")
-BUCKET = os.getenv("S3_BUCKET")
 OUTFILE = os.getenv("S3_OBJECT")
 
 
