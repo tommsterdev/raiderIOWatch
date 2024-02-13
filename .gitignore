@@ -1,2 +1,5 @@
 .env
 pytest.ini
+__pytest_cache__
+__pycache__
+.pytest_cache

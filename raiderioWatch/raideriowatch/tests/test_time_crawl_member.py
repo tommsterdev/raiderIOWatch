@@ -3,11 +3,9 @@ import logging
 import urllib3
 
 
-
 def test_num_pulls_thirty():
     http = urllib3.PoolManager(num_pull=30)
     logging.info(http)
-    
 
 
 def test_num_pools_ten():

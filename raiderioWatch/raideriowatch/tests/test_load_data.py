@@ -4,10 +4,11 @@ from member import Member
 import logging
 
 
-INPUT_FILE = os.getenv('INPUT_FILE')
+INPUT_FILE = os.getenv("INPUT_FILE")
+
 
 def test_load_data_returns_valid_member():
     guild_data = load_data()
     for member in guild_data:
         logging.info(member)
-        assert(isinstance(member, Member))
+        assert isinstance(member, Member)

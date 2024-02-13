@@ -1,5 +1,3 @@
 """
 Dynamo DB CRUD operations
 """
-
-
