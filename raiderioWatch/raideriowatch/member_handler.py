@@ -13,16 +13,8 @@ table = os.environ['TABLE']
 print("Loading function")
 
 
-def get_score(response: Dict[str, Any]) -> float:
-    item = response.get("Item")
-    if item:
-        # parse score from dynamodb response object
-        score = item["score"]["N"]
-    return float(score)
-
-
-def get_item(character: Character):
-    pk = character["character"]
+def get_item(character: str) -> Dict[str, Any]:
+    pk = character
     try:
         response = ddb.get_item(
             TableName=table,
@@ -37,7 +29,7 @@ def get_item(character: Character):
             e.response["Error"]["Message"],
         )
         raise
-    return get_score(response)
+    return response['Item']
 
 
 def response(res) -> Dict[str, Any]:
@@ -55,17 +47,17 @@ def lambda_handler(event, context):
     # parse request
     character = event['queryStringParameters']['character']
     realm = event['queryStringParameters']['realm']
-    
-    # construct query object
-    character = {
-        "character": character,
-        "realm": realm,
-        "region": "us",
-        "score": None,
-    }
-    print(character)
-    character["score"] = get_item(character)
 
-    print(character)
+    item = get_item(character)
+    
+    #consturct response object
+    character = {
+        'character' : item['character']['S'],
+        'realm' : item['realm']['S'],
+        'score' : float(item['score']['N']),
+        'ilvl' : float(item['ilvl']['N']),
+    }
+
 
     return response(character)
+    
