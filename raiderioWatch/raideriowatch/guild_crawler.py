@@ -5,7 +5,7 @@ import httpx
 from typing import Dict, Any, List
 from dotenv import load_dotenv
 from botocore.exceptions import ClientError
-from member import Member, create_member_from_request
+from models.member import Member, create_member_from_request
 from requests import httpx_get, JSONObject
 
 

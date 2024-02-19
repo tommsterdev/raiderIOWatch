@@ -6,8 +6,9 @@ import os
 from dotenv import load_dotenv
 from typing import Dict, Any, List
 
-from member import Member
+from .models.member import Member
 from requests import JSONObject
+from .models.db_item import DB_item
 
 # ddb = boto3.client('dynamodb')
 # sns = boto3.client('sns')
@@ -46,8 +47,9 @@ def create_member_item(member: Member) -> ITEM:
         "faction": {"S": member.faction},
         "active_spec": {"S": member.active_spec},
         "active_role": {"S": member.active_role},
+        "last_crawled_at": {"S": member.last_crawled_at},
     }
-    return Item
+    return db_item(**Item)
 
 
 def extract_member_item(item: Dict[str, Dict[str, Any]]) -> Member:
@@ -94,29 +96,6 @@ def sns_publish(attributes: Dict[str, Any]) -> None:
     )
     print(f"published {message} on topic {SNS_ARN}")
     return
-
-
-def parse_data(data: Dict[str, Any]) -> (float, float):
-
-    scores = data.get("mythic_plus_scores_by_season", None)
-    """
-    optionality get spec and role scores here
-    """
-    score = 0.0
-    if scores:
-        # get current season top score for all specs
-        score = scores[0]["scores"]["all"]
-        if score != 0:
-            print(f"updating new score is {score}")
-
-    # get gear information
-    gear = data.get("gear", None)
-    logging.info(data.get("gear"), None)
-    ilvl = 0.0
-    if gear:
-        ilvl = float(gear["item_level_equipped"])
-
-    return score, ilvl
 
 
 def parse_unprocessed_items(

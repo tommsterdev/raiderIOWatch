@@ -7,18 +7,14 @@ from typing import List, Tuple, Dict
 from dotenv import load_dotenv
 
 
-from member import Member
+from models.member import Member
 from guild_crawler import get_guild
-from utils import (
-    write_members,
-    parse_data,
-    create_member_item_from_list,
-    ITEM,
-    write_item_to_file,
-    chunks,
-)
+from utils.helpers import write_item_to_file, chunks
+from utils.model_utils import create_DB_item_from_list
+
 from requests import httpx_get, JSONObject
 from time import perf_counter
+from datetime import datetime
 
 
 logging.basicConfig(
@@ -48,8 +44,10 @@ async def parse_response(
     score = None
     ilvl = None
     if response.get("mythic_plus_scores_by_season", None):
+        # get score value
         score = response["mythic_plus_scores_by_season"][0]["scores"]["all"]
     if response.get("gear", None):
+        #get ilvl value
         ilvl = response["gear"]["item_level_equipped"]
     return score, ilvl
 
@@ -81,6 +79,7 @@ async def crawl_member(member: Member, client: httpx.Client) -> Member:
     response: JSONObject = await request_member(client=client, params=params)
 
     member.score, member.ilvl = await parse_response(response)
+    member.last_crawled_at = str(datetime.now())
 
     return member
 
@@ -108,18 +107,20 @@ async def main() -> None:
     logging.info(f"logging time elapsed = {elapsed} seconds")
     output_file = "pydantic_data.json"
     # convert members to ddb compatible Items
-    member_items: List[ITEM] = create_member_item_from_list(crawled_members)
+    filtered_members = [member for member in crawled_members if member.score and member.ilvl]
+    member_items: List[DB_item] = create_DB_item_from_list(filtered_members)
     logging.info(f"member items : {member_items}")
     # chunk data
     chunk = chunks(items=member_items)
     while chunk:
         try:
+            # write in chunks
             write_item_to_file(next(chunk), output_file="chunks.json")
         except StopIteration:
             break
-    write_item_to_file(member_items, output_file="ddb_fomat_data.json")
 
-    write_members(members=member_items, output_file=output_file)
+
+    write_item_to_file(member_items, output_file="ddb_format_data.json")
 
     elapsed = perf_counter() - start
     print(f"dump objects and write to file execution time: {elapsed:.2f} seconds")

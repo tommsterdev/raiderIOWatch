@@ -32,6 +32,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.337111"
         }
     },
     {
@@ -67,111 +70,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Kazsoja"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "359"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Rogue"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Outlaw"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Haterproof"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "446"
-        },
-        "race": {
-            "S": "Orc"
-        },
-        "game_class": {
-            "S": "Warrior"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Fury"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Obiikanobi"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "428"
-        },
-        "race": {
-            "S": "Tauren"
-        },
-        "game_class": {
-            "S": "Paladin"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Retribution"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.337612"
         }
     },
     {
@@ -207,6 +108,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.339113"
         }
     },
     {
@@ -242,6 +146,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.339610"
         }
     },
     {
@@ -277,6 +184,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.339610"
         }
     },
     {
@@ -312,6 +222,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.337612"
         }
     },
     {
@@ -325,10 +238,10 @@
             "S": "us"
         },
         "score": {
-            "N": "3090.9"
+            "N": "3101.2"
         },
         "ilvl": {
-            "N": "485.812"
+            "N": "486.188"
         },
         "race": {
             "S": "Zandalari Troll"
@@ -347,76 +260,9 @@
         },
         "active_role": {
             "S": "TANK"
-        }
-    },
-    {
-        "character": {
-            "S": "Scraedoosk"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "436"
-        },
-        "race": {
-            "S": "Troll"
-        },
-        "game_class": {
-            "S": "Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Beast Mastery"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Afksry"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "440"
-        },
-        "race": {
-            "S": "Goblin"
-        },
-        "game_class": {
-            "S": "Priest"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Shadow"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.340112"
         }
     },
     {
@@ -452,6 +298,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.342113"
         }
     },
     {
@@ -468,7 +317,7 @@
             "N": "2463.2"
         },
         "ilvl": {
-            "N": "475.375"
+            "N": "476"
         },
         "race": {
             "S": "Blood Elf"
@@ -487,6 +336,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.341113"
         }
     },
     {
@@ -522,216 +374,9 @@
         },
         "active_role": {
             "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Terprèkt"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "441"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Rogue"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Subtlety"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Kegstandpro"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "436"
-        },
-        "race": {
-            "S": "Vulpera"
-        },
-        "game_class": {
-            "S": "Monk"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Windwalker"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Porich"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "445"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Paladin"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Holy"
-        },
-        "active_role": {
-            "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Huntydumpty"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "419"
-        },
-        "race": {
-            "S": "Orc"
-        },
-        "game_class": {
-            "S": "Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Beast Mastery"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Daraven"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "428"
-        },
-        "race": {
-            "S": "Zandalari Troll"
-        },
-        "game_class": {
-            "S": "Druid"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Restoration"
-        },
-        "active_role": {
-            "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Erebusash"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "417"
-        },
-        "race": {
-            "S": "Nightborne"
-        },
-        "game_class": {
-            "S": "Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Marksmanship"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.341613"
         }
     },
     {
@@ -748,7 +393,7 @@
             "N": "2036.6"
         },
         "ilvl": {
-            "N": "467"
+            "N": "468"
         },
         "race": {
             "S": "Tauren"
@@ -767,6 +412,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.345113"
         }
     },
     {
@@ -780,10 +428,10 @@
             "S": "us"
         },
         "score": {
-            "N": "3142.5"
+            "N": "3156"
         },
         "ilvl": {
-            "N": "485"
+            "N": "486"
         },
         "race": {
             "S": "Night Elf"
@@ -802,6 +450,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.344615"
         }
     },
     {
@@ -837,6 +488,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.353613"
         }
     },
     {
@@ -872,6 +526,9 @@
         },
         "active_role": {
             "S": "TANK"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.344113"
         }
     },
     {
@@ -885,10 +542,10 @@
             "S": "us"
         },
         "score": {
-            "N": "3067.7"
+            "N": "3092.7"
         },
         "ilvl": {
-            "N": "484.5"
+            "N": "485.062"
         },
         "race": {
             "S": "Blood Elf"
@@ -907,76 +564,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Ashenkappa"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "446"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Priest"
-        },
-        "rank": {
-            "N": "2"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Shadow"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Mazikeene"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "291"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Demon Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Vengeance"
-        },
-        "active_role": {
-            "S": "TANK"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.349113"
         }
     },
     {
@@ -990,10 +580,10 @@
             "S": "us"
         },
         "score": {
-            "N": "3136.3"
+            "N": "3141.2"
         },
         "ilvl": {
-            "N": "484"
+            "N": "485"
         },
         "race": {
             "S": "Tauren"
@@ -1012,6 +602,9 @@
         },
         "active_role": {
             "S": "TANK"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.350611"
         }
     },
     {
@@ -1028,7 +621,7 @@
             "N": "3082.9"
         },
         "ilvl": {
-            "N": "484"
+            "N": "485"
         },
         "race": {
             "S": "Dracthyr"
@@ -1047,6 +640,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.352611"
         }
     },
     {
@@ -1063,7 +659,7 @@
             "N": "3271.2"
         },
         "ilvl": {
-            "N": "486"
+            "N": "485"
         },
         "race": {
             "S": "Blood Elf"
@@ -1082,6 +678,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.356610"
         }
     },
     {
@@ -1117,76 +716,9 @@
         },
         "active_role": {
             "S": "TANK"
-        }
-    },
-    {
-        "character": {
-            "S": "Soulmani"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "432"
-        },
-        "race": {
-            "S": "Tauren"
-        },
-        "game_class": {
-            "S": "Druid"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Restoration"
-        },
-        "active_role": {
-            "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Saeralah"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "409"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Priest"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Holy"
-        },
-        "active_role": {
-            "S": "HEALING"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.355113"
         }
     },
     {
@@ -1222,146 +754,9 @@
         },
         "active_role": {
             "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Cheefbief"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "381"
-        },
-        "race": {
-            "S": "Highmountain Tauren"
-        },
-        "game_class": {
-            "S": "Druid"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Feral"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Nikomachos"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "439"
-        },
-        "race": {
-            "S": "Orc"
-        },
-        "game_class": {
-            "S": "Shaman"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Restoration"
-        },
-        "active_role": {
-            "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Baragah"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "420"
-        },
-        "race": {
-            "S": "Orc"
-        },
-        "game_class": {
-            "S": "Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Beast Mastery"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Saptehass"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "412"
-        },
-        "race": {
-            "S": "Orc"
-        },
-        "game_class": {
-            "S": "Rogue"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Outlaw"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.357113"
         }
     },
     {
@@ -1397,76 +792,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Illidanasty"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "419"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Demon Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Havoc"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Shiftnx"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "446"
-        },
-        "race": {
-            "S": "Tauren"
-        },
-        "game_class": {
-            "S": "Druid"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Guardian"
-        },
-        "active_role": {
-            "S": "TANK"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.362112"
         }
     },
     {
@@ -1483,7 +811,7 @@
             "N": "2635.9"
         },
         "ilvl": {
-            "N": "484"
+            "N": "484.25"
         },
         "race": {
             "S": "Zandalari Troll"
@@ -1502,216 +830,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Richko"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "437"
-        },
-        "race": {
-            "S": "Dracthyr"
-        },
-        "game_class": {
-            "S": "Evoker"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Augmentation"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Creamycooter"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "399"
-        },
-        "race": {
-            "S": "Orc"
-        },
-        "game_class": {
-            "S": "Warrior"
-        },
-        "rank": {
-            "N": "1"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Protection"
-        },
-        "active_role": {
-            "S": "TANK"
-        }
-    },
-    {
-        "character": {
-            "S": "Nicolbolax"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "421"
-        },
-        "race": {
-            "S": "Dracthyr"
-        },
-        "game_class": {
-            "S": "Evoker"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Preservation"
-        },
-        "active_role": {
-            "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Legatostabs"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "415"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Rogue"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Subtlety"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Drawgoon"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "436"
-        },
-        "race": {
-            "S": "Dracthyr"
-        },
-        "game_class": {
-            "S": "Evoker"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Augmentation"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Saelalah"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "436"
-        },
-        "race": {
-            "S": "Nightborne"
-        },
-        "game_class": {
-            "S": "Mage"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Frost"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.367113"
         }
     },
     {
@@ -1747,6 +868,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.370613"
         }
     },
     {
@@ -1782,41 +906,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Slaythen"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "443"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Demon Hunter"
-        },
-        "rank": {
-            "N": "2"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Havoc"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.498616"
         }
     },
     {
@@ -1852,41 +944,9 @@
         },
         "active_role": {
             "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Swaeyzz"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "435"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Beast Mastery"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.371611"
         }
     },
     {
@@ -1900,10 +960,10 @@
             "S": "us"
         },
         "score": {
-            "N": "131.1"
+            "N": "416.1"
         },
         "ilvl": {
-            "N": "439"
+            "N": "441"
         },
         "race": {
             "S": "Highmountain Tauren"
@@ -1918,80 +978,13 @@
             "S": "horde"
         },
         "active_spec": {
-            "S": "Discipline"
-        },
-        "active_role": {
-            "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Mizdayen"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "401"
-        },
-        "race": {
-            "S": "Highmountain Tauren"
-        },
-        "game_class": {
-            "S": "Druid"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Guardian"
-        },
-        "active_role": {
-            "S": "TANK"
-        }
-    },
-    {
-        "character": {
-            "S": "Tehhammer"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "441"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Paladin"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Retribution"
+            "S": "Shadow"
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.623112"
         }
     },
     {
@@ -2005,7 +998,7 @@
             "S": "us"
         },
         "score": {
-            "N": "2681.5"
+            "N": "2706.5"
         },
         "ilvl": {
             "N": "481"
@@ -2027,216 +1020,9 @@
         },
         "active_role": {
             "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Gethrash"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "437"
-        },
-        "race": {
-            "S": "Tauren"
-        },
-        "game_class": {
-            "S": "Warrior"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Arms"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Beamclap"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "427"
-        },
-        "race": {
-            "S": "Dwarf"
-        },
-        "game_class": {
-            "S": "Warrior"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Protection"
-        },
-        "active_role": {
-            "S": "TANK"
-        }
-    },
-    {
-        "character": {
-            "S": "Monomaniacal"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "445"
-        },
-        "race": {
-            "S": "Mag'har Orc"
-        },
-        "game_class": {
-            "S": "Warrior"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Fury"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Supafupa"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "192"
-        },
-        "race": {
-            "S": "Troll"
-        },
-        "game_class": {
-            "S": "Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Beast Mastery"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Kazash"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "411"
-        },
-        "race": {
-            "S": "Mag'har Orc"
-        },
-        "game_class": {
-            "S": "Hunter"
-        },
-        "rank": {
-            "N": "2"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Beast Mastery"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Cindrethrash"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "405"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Beast Mastery"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.499615"
         }
     },
     {
@@ -2272,216 +1058,9 @@
         },
         "active_role": {
             "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Shízz"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "445"
-        },
-        "race": {
-            "S": "Troll"
-        },
-        "game_class": {
-            "S": "Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Survival"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Hooiyahh"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "412"
-        },
-        "race": {
-            "S": "Tauren"
-        },
-        "game_class": {
-            "S": "Shaman"
-        },
-        "rank": {
-            "N": "2"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Elemental"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Hexxmage"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "433"
-        },
-        "race": {
-            "S": "Tauren"
-        },
-        "game_class": {
-            "S": "Mage"
-        },
-        "rank": {
-            "N": "3"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Fire"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Swaeyy"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "398"
-        },
-        "race": {
-            "S": "Zandalari Troll"
-        },
-        "game_class": {
-            "S": "Paladin"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Retribution"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Wetslit"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "385"
-        },
-        "race": {
-            "S": "Tauren"
-        },
-        "game_class": {
-            "S": "Shaman"
-        },
-        "rank": {
-            "N": "1"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Elemental"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Sneakyteat"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "379"
-        },
-        "race": {
-            "S": "Tauren"
-        },
-        "game_class": {
-            "S": "Rogue"
-        },
-        "rank": {
-            "N": "1"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Outlaw"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.374112"
         }
     },
     {
@@ -2517,41 +1096,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Swaeybaey"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "393"
-        },
-        "race": {
-            "S": "Vulpera"
-        },
-        "game_class": {
-            "S": "Shaman"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Elemental"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.573614"
         }
     },
     {
@@ -2587,41 +1134,9 @@
         },
         "active_role": {
             "S": "TANK"
-        }
-    },
-    {
-        "character": {
-            "S": "Shamafen"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "417"
-        },
-        "race": {
-            "S": "Orc"
-        },
-        "game_class": {
-            "S": "Shaman"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Enhancement"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.376112"
         }
     },
     {
@@ -2657,146 +1172,9 @@
         },
         "active_role": {
             "S": "TANK"
-        }
-    },
-    {
-        "character": {
-            "S": "Anustear"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "404"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Warrior"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Protection"
-        },
-        "active_role": {
-            "S": "TANK"
-        }
-    },
-    {
-        "character": {
-            "S": "Nastypally"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "443"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Paladin"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Retribution"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Shìzz"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "445"
-        },
-        "race": {
-            "S": "Goblin"
-        },
-        "game_class": {
-            "S": "Priest"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Shadow"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Beampriest"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "446"
-        },
-        "race": {
-            "S": "Night Elf"
-        },
-        "game_class": {
-            "S": "Priest"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Shadow"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.511611"
         }
     },
     {
@@ -2832,6 +1210,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.574114"
         }
     },
     {
@@ -2867,6 +1248,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.517611"
         }
     },
     {
@@ -2902,286 +1286,9 @@
         },
         "active_role": {
             "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Ðrenì"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "400"
-        },
-        "race": {
-            "S": "Zandalari Troll"
-        },
-        "game_class": {
-            "S": "Paladin"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Retribution"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Addïe"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "397"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Warrior"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Fury"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Kazhp"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "413"
-        },
-        "race": {
-            "S": "Dark Iron Dwarf"
-        },
-        "game_class": {
-            "S": "Paladin"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Protection"
-        },
-        "active_role": {
-            "S": "TANK"
-        }
-    },
-    {
-        "character": {
-            "S": "Waterrboy"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "432"
-        },
-        "race": {
-            "S": "Dwarf"
-        },
-        "game_class": {
-            "S": "Shaman"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Elemental"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Ponychu"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "432"
-        },
-        "race": {
-            "S": "Dwarf"
-        },
-        "game_class": {
-            "S": "Shaman"
-        },
-        "rank": {
-            "N": "3"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Restoration"
-        },
-        "active_role": {
-            "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Burntcheex"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "414"
-        },
-        "race": {
-            "S": "Dracthyr"
-        },
-        "game_class": {
-            "S": "Evoker"
-        },
-        "rank": {
-            "N": "2"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Devastation"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Daggidk"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "411"
-        },
-        "race": {
-            "S": "Vulpera"
-        },
-        "game_class": {
-            "S": "Death Knight"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Frost"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Daggiblast"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "444"
-        },
-        "race": {
-            "S": "Nightborne"
-        },
-        "game_class": {
-            "S": "Mage"
-        },
-        "rank": {
-            "N": "2"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Fire"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.381114"
         }
     },
     {
@@ -3217,6 +1324,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.414611"
         }
     },
     {
@@ -3252,41 +1362,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Porichu"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "445"
-        },
-        "race": {
-            "S": "Night Elf"
-        },
-        "game_class": {
-            "S": "Druid"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Guardian"
-        },
-        "active_role": {
-            "S": "TANK"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.555113"
         }
     },
     {
@@ -3322,41 +1400,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Beast"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "426"
-        },
-        "race": {
-            "S": "Orc"
-        },
-        "game_class": {
-            "S": "Shaman"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Restoration"
-        },
-        "active_role": {
-            "S": "HEALING"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.398616"
         }
     },
     {
@@ -3392,181 +1438,9 @@
         },
         "active_role": {
             "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Twstedt"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "444"
-        },
-        "race": {
-            "S": "Night Elf"
-        },
-        "game_class": {
-            "S": "Druid"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Balance"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Mangotwstedt"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "444"
-        },
-        "race": {
-            "S": "Dracthyr"
-        },
-        "game_class": {
-            "S": "Evoker"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Augmentation"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Papatiyo"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "424"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Monk"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Mistweaver"
-        },
-        "active_role": {
-            "S": "HEALING"
-        }
-    },
-    {
-        "character": {
-            "S": "Freezekink"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "433"
-        },
-        "race": {
-            "S": "Tauren"
-        },
-        "game_class": {
-            "S": "Mage"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Frost"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Ndubtblybusn"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "434"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Demon Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Vengeance"
-        },
-        "active_role": {
-            "S": "TANK"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.522611"
         }
     },
     {
@@ -3602,111 +1476,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Daggipriest"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "443"
-        },
-        "race": {
-            "S": "Human"
-        },
-        "game_class": {
-            "S": "Priest"
-        },
-        "rank": {
-            "N": "2"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Shadow"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Creamypanty"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "425"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Demon Hunter"
-        },
-        "rank": {
-            "N": "1"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Vengeance"
-        },
-        "active_role": {
-            "S": "TANK"
-        }
-    },
-    {
-        "character": {
-            "S": "Bubblébuttz"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "432"
-        },
-        "race": {
-            "S": "Dwarf"
-        },
-        "game_class": {
-            "S": "Paladin"
-        },
-        "rank": {
-            "N": "2"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Holy"
-        },
-        "active_role": {
-            "S": "HEALING"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.523111"
         }
     },
     {
@@ -3742,6 +1514,9 @@
         },
         "active_role": {
             "S": "TANK"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.423113"
         }
     },
     {
@@ -3777,41 +1552,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Strokemytoté"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "445"
-        },
-        "race": {
-            "S": "Dwarf"
-        },
-        "game_class": {
-            "S": "Shaman"
-        },
-        "rank": {
-            "N": "2"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Restoration"
-        },
-        "active_role": {
-            "S": "HEALING"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.522111"
         }
     },
     {
@@ -3847,6 +1590,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.440113"
         }
     },
     {
@@ -3882,6 +1628,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.610613"
         }
     },
     {
@@ -3898,7 +1647,7 @@
             "N": "1975.6"
         },
         "ilvl": {
-            "N": "471"
+            "N": "470"
         },
         "race": {
             "S": "Blood Elf"
@@ -3913,10 +1662,13 @@
             "S": "horde"
         },
         "active_spec": {
-            "S": "Frost"
+            "S": "Arcane"
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.522111"
         }
     },
     {
@@ -3952,111 +1704,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Staysíck"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "444"
-        },
-        "race": {
-            "S": "Orc"
-        },
-        "game_class": {
-            "S": "Mage"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Arcane"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Lennybâr"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "444"
-        },
-        "race": {
-            "S": "Orc"
-        },
-        "game_class": {
-            "S": "Shaman"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Elemental"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Ashenrho"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "238"
-        },
-        "race": {
-            "S": "Dracthyr"
-        },
-        "game_class": {
-            "S": "Evoker"
-        },
-        "rank": {
-            "N": "2"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Augmentation"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.436613"
         }
     },
     {
@@ -4092,6 +1742,9 @@
         },
         "active_role": {
             "S": "TANK"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.536113"
         }
     },
     {
@@ -4127,41 +1780,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Hidethechild"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "101"
-        },
-        "race": {
-            "S": "Dark Iron Dwarf"
-        },
-        "game_class": {
-            "S": "Priest"
-        },
-        "rank": {
-            "N": "1"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Shadow"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.525612"
         }
     },
     {
@@ -4197,111 +1818,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Palistute"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "454"
-        },
-        "race": {
-            "S": "Dark Iron Dwarf"
-        },
-        "game_class": {
-            "S": "Paladin"
-        },
-        "rank": {
-            "N": "2"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Retribution"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Beamsham"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "445"
-        },
-        "race": {
-            "S": "Dwarf"
-        },
-        "game_class": {
-            "S": "Shaman"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Enhancement"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Manodediablo"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "436"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Death Knight"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Unholy"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.531112"
         }
     },
     {
@@ -4337,6 +1856,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.533112"
         }
     },
     {
@@ -4372,76 +1894,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Clior"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "439"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Hunter"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Survival"
-        },
-        "active_role": {
-            "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Pumpkinspice"
-        },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "423"
-        },
-        "race": {
-            "S": "Troll"
-        },
-        "game_class": {
-            "S": "Priest"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Shadow"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.451115"
         }
     },
     {
@@ -4477,41 +1932,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Trogshifty"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "447"
-        },
-        "race": {
-            "S": "Highmountain Tauren"
-        },
-        "game_class": {
-            "S": "Druid"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Guardian"
-        },
-        "active_role": {
-            "S": "TANK"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.453612"
         }
     },
     {
@@ -4547,41 +1970,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Clyor"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "440"
-        },
-        "race": {
-            "S": "Blood Elf"
-        },
-        "game_class": {
-            "S": "Monk"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "horde"
-        },
-        "active_spec": {
-            "S": "Windwalker"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.536613"
         }
     },
     {
@@ -4617,41 +2008,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Ikisshomies"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "444"
-        },
-        "race": {
-            "S": "Dark Iron Dwarf"
-        },
-        "game_class": {
-            "S": "Warlock"
-        },
-        "rank": {
-            "N": "1"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Demonology"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.642112"
         }
     },
     {
@@ -4665,7 +2024,7 @@
             "S": "us"
         },
         "score": {
-            "N": "2575.3"
+            "N": "2611.8"
         },
         "ilvl": {
             "N": "479"
@@ -4687,6 +2046,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.452611"
         }
     },
     {
@@ -4722,6 +2084,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.525111"
         }
     },
     {
@@ -4735,10 +2100,10 @@
             "S": "us"
         },
         "score": {
-            "N": "2603.5"
+            "N": "2754.6"
         },
         "ilvl": {
-            "N": "478"
+            "N": "478.562"
         },
         "race": {
             "S": "Draenei"
@@ -4753,10 +2118,13 @@
             "S": "alliance"
         },
         "active_spec": {
-            "S": "Beast Mastery"
+            "S": "Survival"
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.575115"
         }
     },
     {
@@ -4792,6 +2160,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.457112"
         }
     },
     {
@@ -4808,7 +2179,7 @@
             "N": "2832.4"
         },
         "ilvl": {
-            "N": "486"
+            "N": "486.188"
         },
         "race": {
             "S": "Night Elf"
@@ -4827,6 +2198,9 @@
         },
         "active_role": {
             "S": "TANK"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.612112"
         }
     },
     {
@@ -4862,6 +2236,9 @@
         },
         "active_role": {
             "S": "TANK"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.580115"
         }
     },
     {
@@ -4875,10 +2252,10 @@
             "S": "us"
         },
         "score": {
-            "N": "3379.2"
+            "N": "3381.1"
         },
         "ilvl": {
-            "N": "487"
+            "N": "487.125"
         },
         "race": {
             "S": "Night Elf"
@@ -4897,6 +2274,9 @@
         },
         "active_role": {
             "S": "TANK"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.455113"
         }
     },
     {
@@ -4932,41 +2312,9 @@
         },
         "active_role": {
             "S": "DPS"
-        }
-    },
-    {
-        "character": {
-            "S": "Boyardaddy"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "3302.4"
-        },
-        "ilvl": {
-            "N": "488"
-        },
-        "race": {
-            "S": "Dwarf"
-        },
-        "game_class": {
-            "S": "Paladin"
-        },
-        "rank": {
-            "N": "3"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Retribution"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.611613"
         }
     },
     {
@@ -5002,6 +2350,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.527111"
         }
     },
     {
@@ -5037,6 +2388,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.453113"
         }
     },
     {
@@ -5072,6 +2426,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.580613"
         }
     },
     {
@@ -5085,10 +2442,10 @@
             "S": "us"
         },
         "score": {
-            "N": "2791.6"
+            "N": "2793.8"
         },
         "ilvl": {
-            "N": "481"
+            "N": "483.188"
         },
         "race": {
             "S": "Night Elf"
@@ -5107,41 +2464,9 @@
         },
         "active_role": {
             "S": "TANK"
-        }
-    },
-    {
-        "character": {
-            "S": "Paybackzx"
         },
-        "realm": {
-            "S": "Tichondrius"
-        },
-        "region": {
-            "S": "us"
-        },
-        "score": {
-            "N": "0"
-        },
-        "ilvl": {
-            "N": "425"
-        },
-        "race": {
-            "S": "Human"
-        },
-        "game_class": {
-            "S": "Death Knight"
-        },
-        "rank": {
-            "N": "4"
-        },
-        "faction": {
-            "S": "alliance"
-        },
-        "active_spec": {
-            "S": "Unholy"
-        },
-        "active_role": {
-            "S": "DPS"
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.552113"
         }
     },
     {
@@ -5158,7 +2483,7 @@
             "N": "3379.2"
         },
         "ilvl": {
-            "N": "486.375"
+            "N": "486"
         },
         "race": {
             "S": "Dwarf"
@@ -5177,6 +2502,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.535612"
         }
     },
     {
@@ -5190,10 +2518,10 @@
             "S": "us"
         },
         "score": {
-            "N": "2814.6"
+            "N": "2844"
         },
         "ilvl": {
-            "N": "483"
+            "N": "484"
         },
         "race": {
             "S": "Night Elf"
@@ -5212,6 +2540,9 @@
         },
         "active_role": {
             "S": "TANK"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.642612"
         }
     },
     {
@@ -5247,6 +2578,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.455611"
         }
     },
     {
@@ -5282,6 +2616,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.625112"
         }
     },
     {
@@ -5295,10 +2632,10 @@
             "S": "us"
         },
         "score": {
-            "N": "2493.7"
+            "N": "2567.6"
         },
         "ilvl": {
-            "N": "479.438"
+            "N": "480"
         },
         "race": {
             "S": "Zandalari Troll"
@@ -5317,6 +2654,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.553112"
         }
     },
     {
@@ -5352,6 +2692,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.455113"
         }
     },
     {
@@ -5368,7 +2711,7 @@
             "N": "3239.2"
         },
         "ilvl": {
-            "N": "485"
+            "N": "485.812"
         },
         "race": {
             "S": "Night Elf"
@@ -5387,6 +2730,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.538115"
         }
     },
     {
@@ -5422,6 +2768,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.576114"
         }
     },
     {
@@ -5438,7 +2787,7 @@
             "N": "3220.2"
         },
         "ilvl": {
-            "N": "485"
+            "N": "485.25"
         },
         "race": {
             "S": "Orc"
@@ -5457,6 +2806,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.456113"
         }
     },
     {
@@ -5470,10 +2822,10 @@
             "S": "us"
         },
         "score": {
-            "N": "2898.2"
+            "N": "2953.4"
         },
         "ilvl": {
-            "N": "484"
+            "N": "485"
         },
         "race": {
             "S": "Night Elf"
@@ -5492,6 +2844,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.545616"
         }
     },
     {
@@ -5505,10 +2860,10 @@
             "S": "us"
         },
         "score": {
-            "N": "3113.7"
+            "N": "3129.1"
         },
         "ilvl": {
-            "N": "485"
+            "N": "487.312"
         },
         "race": {
             "S": "Night Elf"
@@ -5527,6 +2882,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.576114"
         }
     },
     {
@@ -5562,6 +2920,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.454611"
         }
     },
     {
@@ -5575,7 +2936,7 @@
             "S": "us"
         },
         "score": {
-            "N": "2539.8"
+            "N": "2541.7"
         },
         "ilvl": {
             "N": "479"
@@ -5597,6 +2958,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.611613"
         }
     },
     {
@@ -5632,6 +2996,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.619612"
         }
     },
     {
@@ -5667,6 +3034,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.456113"
         }
     },
     {
@@ -5683,7 +3053,7 @@
             "N": "2128.6"
         },
         "ilvl": {
-            "N": "475.812"
+            "N": "477.312"
         },
         "race": {
             "S": "Dwarf"
@@ -5702,6 +3072,9 @@
         },
         "active_role": {
             "S": "TANK"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.615612"
         }
     },
     {
@@ -5718,7 +3091,7 @@
             "N": "1790.8"
         },
         "ilvl": {
-            "N": "473"
+            "N": "474"
         },
         "race": {
             "S": "Orc"
@@ -5737,6 +3110,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.541613"
         }
     },
     {
@@ -5753,7 +3129,7 @@
             "N": "3218.9"
         },
         "ilvl": {
-            "N": "486"
+            "N": "486.938"
         },
         "race": {
             "S": "Orc"
@@ -5772,6 +3148,9 @@
         },
         "active_role": {
             "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.456614"
         }
     },
     {
@@ -5807,6 +3186,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.543613"
         }
     },
     {
@@ -5820,7 +3202,7 @@
             "S": "us"
         },
         "score": {
-            "N": "3052.8"
+            "N": "3070.7"
         },
         "ilvl": {
             "N": "484"
@@ -5842,6 +3224,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.579113"
         }
     },
     {
@@ -5855,10 +3240,10 @@
             "S": "us"
         },
         "score": {
-            "N": "2486.9"
+            "N": "2751.2"
         },
         "ilvl": {
-            "N": "481"
+            "N": "482.125"
         },
         "race": {
             "S": "Night Elf"
@@ -5877,6 +3262,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.458113"
         }
     },
     {
@@ -5912,6 +3300,9 @@
         },
         "active_role": {
             "S": "TANK"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.626614"
         }
     },
     {
@@ -5925,7 +3316,7 @@
             "S": "us"
         },
         "score": {
-            "N": "2829.8"
+            "N": "2862.6"
         },
         "ilvl": {
             "N": "483"
@@ -5943,10 +3334,13 @@
             "S": "alliance"
         },
         "active_spec": {
-            "S": "Guardian"
+            "S": "Restoration"
         },
         "active_role": {
-            "S": "TANK"
+            "S": "HEALING"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.538613"
         }
     },
     {
@@ -5960,10 +3354,10 @@
             "S": "us"
         },
         "score": {
-            "N": "2928.4"
+            "N": "2949.9"
         },
         "ilvl": {
-            "N": "480"
+            "N": "482"
         },
         "race": {
             "S": "Night Elf"
@@ -5982,6 +3376,9 @@
         },
         "active_role": {
             "S": "DPS"
+        },
+        "last_crawled_at": {
+            "S": "2024-02-18 13:07:26.456614"
         }
     }
 ]

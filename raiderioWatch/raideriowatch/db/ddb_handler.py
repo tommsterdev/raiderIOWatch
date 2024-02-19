@@ -5,7 +5,7 @@ from boto3.dynamodb.conditions import Key, Attr
 from dotenv import load_dotenv
 from typing import Dict, Optional
 from utils import ITEM
-from requests import JSONObject
+from ..requests import JSONObject
 from ddb import DDBTable
 
 load_dotenv()
