@@ -12,6 +12,13 @@ load_dotenv()
 ddb = boto3.client("dynamodb")
 
 
+def get_db():
+    try:
+        table = ddb.Table(TABLE)
+        yield table
+    finally ddb.close()
+
+    
 def lambda_handler(event, context) -> JSONObject:
     table_name = event["table"]
     key_schema = event["schema"]

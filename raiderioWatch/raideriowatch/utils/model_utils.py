@@ -13,18 +13,18 @@ def create_DB_item(member: Member) -> DB_item:
     Constructs member ddb_item from dict
     """
     Item = {
-        "character": {"S": member.character_name},
-        "realm": {"S": member.realm},
-        "region": {"S": member.region},
-        "score": {"N": str(member.score)},
-        "ilvl": {"N": str(member.ilvl)},
-        "race": {"S": member.race},
-        "game_class": {"S": member.game_class},
-        "rank": {"N": str(member.rank)},
-        "faction": {"S": member.faction},
-        "active_spec": {"S": member.active_spec},
-        "active_role": {"S": member.active_role},
-        "last_crawled_at": {"S": member.last_crawled_at},
+        "character": member.character_name,
+        "realm": member.realm,
+        "region": member.region,
+        "score": member.score,
+        "ilvl": member.ilvl,
+        "race": member.race,
+        "game_class": member.game_class,
+        "rank": member.rank,
+        "faction": member.faction,
+        "active_spec": member.active_spec,
+        "active_role":member.active_role,
+        "last_crawled_at": member.last_crawled_at,
     }
     return DB_item(**Item)
 
