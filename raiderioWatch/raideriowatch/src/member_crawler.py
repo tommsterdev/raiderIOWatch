@@ -108,7 +108,7 @@ async def main() -> None:
     output_file = "pydantic_data.json"
     # convert members to ddb compatible Items
     filtered_members = [member for member in crawled_members if member.score and member.ilvl]
-    member_items: List[DB_item] = create_DB_item_from_list(filtered_members)
+    member_items: list[DB_item] = create_DB_item_from_list(filtered_members)
     logging.info(f"member items : {member_items}")
     # chunk data
     chunk = chunks(items=member_items)

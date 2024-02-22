@@ -1,22 +1,20 @@
-import json
 import logging
 import os
 import asyncio
 import boto3
 import httpx
-from typing import List, Tuple, Dict
 from dotenv import load_dotenv
 from botocore.exceptions import ClientError
 
 from member_crawler import crawl_member
 from models.member import Member
+from models.db_item import DB_item
 from db.ddb_write import batch_writer
 from guild_crawler import get_guild
-from utils.helpers import write_item_to_file, chunks
+from utils.helpers import chunks
 from utils.model_utils import create_DB_item_from_list
 
 from time import perf_counter
-from datetime import datetime
 
 
 logging.basicConfig(
@@ -42,7 +40,7 @@ async def main() -> None:
 
     start = perf_counter()
     async with httpx.AsyncClient() as client:
-        guild_data: List[Member] = await get_guild(client)
+        guild_data: list[Member] = await get_guild(client)
 
     # filter inactive members:
     active_members = [member for member in guild_data if member.rank <= 4]
@@ -50,9 +48,9 @@ async def main() -> None:
     elapsed = perf_counter() - start
     print(f"get guild execution time: {elapsed:.2f} seconds")
 
-    print(f"getting member data...")
+    print("getting member data...")
     async with httpx.AsyncClient() as client:
-        crawled_members: List[Member] = await asyncio.gather(
+        crawled_members: list[Member] = await asyncio.gather(
             *[crawl_member(member, client) for member in active_members]
         )
 
@@ -62,7 +60,7 @@ async def main() -> None:
 
     # convert members to ddb compatible Items
     filtered_members = [member for member in crawled_members if member.score and member.ilvl]
-    member_items: List[DB_item] = create_DB_item_from_list(filtered_members)
+    member_items: list[DB_item] = create_DB_item_from_list(filtered_members)
     logging.info(f"member items : {member_items}")
     # chunk data
     chunk = chunks(items=member_items)

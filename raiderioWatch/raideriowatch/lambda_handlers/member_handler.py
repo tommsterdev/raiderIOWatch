@@ -1,38 +1,57 @@
-import json
-import boto3
-import os
-import logging
-from botocore.exceptions import ClientError
 
+import json
+import logging
+import os
 from typing import Dict, Any
 
+import boto3
+from botocore.exceptions import ClientError
+
 ddb = boto3.client("dynamodb")
-Character = Dict[str, str | float | None]
 table = os.environ['TABLE']
 
 print("Loading function")
 
 
 def get_item(character: str) -> Dict[str, Any]:
-    pk = character
-    try:
-        response = ddb.get_item(
-            TableName=table,
-            Key={
-                'character': {'S' : str(pk)},
-            },
-        )
-    except ClientError as e:
-        logging.error(
-            "Couldn't list tables. Reason: %s: %s",
-            e.response["Error"]["Code"],
-            e.response["Error"]["Message"],
-        )
-        raise
-    return response['Item']
+    
+        """
+        Retrieves an item from the DynamoDB table based on the given character.
+
+        Args:
+            character (str): The character name.
+
+        Returns:
+            Dict[str, Any]: The item retrieved from the DynamoDB table.
+        """
+        pk = character
+        try:
+            response = ddb.get_item(
+                TableName=table,
+                Key={
+                    'character': {'S' : str(pk)},
+                },
+            )
+        except ClientError as e:
+            logging.error(
+                "Couldn't list tables. Reason: %s: %s",
+                e.response["Error"]["Code"],
+                e.response["Error"]["Message"],
+            )
+            raise
+        return response['Item']
 
 
-def response(res) -> Dict[str, Any]:
+def resp(res) -> Dict[str, Any]:
+    """
+    Generate a response dictionary with the given result.
+
+    Args:
+        res: The result to be included in the response body.
+
+    Returns:
+        A dictionary containing the response status code, body, and headers.
+    """
     return {
         "statusCode": 200,
         "body": json.dumps(res),
@@ -43,6 +62,17 @@ def response(res) -> Dict[str, Any]:
 
 
 def lambda_handler(event, context):
+    """
+    Handles the Lambda function invocation.
+
+    Args:
+        event (dict): The event data passed to the Lambda function.
+        context (object): The runtime information of the Lambda function.
+
+    Returns:
+        dict: The response object containing character information.
+    """
+
     print(f'received event = {event}')
     # parse request
     character = event['queryStringParameters']['character']
@@ -59,5 +89,5 @@ def lambda_handler(event, context):
     }
 
 
-    return response(character)
-    
+    return resp(character)
+

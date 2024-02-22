@@ -1,8 +1,11 @@
-from pydantic import BaseModel, Field
 from decimal import Decimal
+from pydantic import BaseModel
 
 
 class DB_item(BaseModel):
+    """
+    A class to represent database item of a member of a guild.
+    """
     character: str
     realm : str
     region: str

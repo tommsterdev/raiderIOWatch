@@ -1,8 +1,11 @@
-from typing import Dict, Any, List, Optional
+from typing import Any, Optional
 from pydantic import BaseModel, ValidationError
 
 
 class Member(BaseModel):
+    """
+    A class to represent a member of a guild.
+    """
     character_name: str
     region: str
     realm: str
@@ -17,7 +20,7 @@ class Member(BaseModel):
     ilvl: float = 0.0
 
 
-def create_member_from_request(member_entry: Dict[str, Any]) -> Member:
+def create_member_from_request(member_entry: dict[str, Any]) -> Member:
     """
     Construct a Member object from raider io guild api request
     """
