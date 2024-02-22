@@ -4,7 +4,7 @@ import httpx
 from dotenv import load_dotenv
 from botocore.exceptions import ClientError
 from models.member import Member
-from utils.model_utils import create_member_from_list
+from utils.model_utils import create_member
 from .requests import httpx_get, JSONObject
 
 
@@ -47,5 +47,5 @@ async def get_guild(client: httpx.Client) -> list[Member]:
         logger.exception(f"Error connecting to {GUILD_URL}: {e}")
 
 
-    members = create_member_from_list(data["members"])
+    members = create_member(data["members"])
     return members

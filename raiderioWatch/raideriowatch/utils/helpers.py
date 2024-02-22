@@ -1,5 +1,6 @@
 import logging
 import json
+from functools import partial
 from typing import Any, Callable
 from models.db_item import DB_item
 from models.member import Member
@@ -50,8 +51,8 @@ def write_members(members: list[dict[str, Any]], output_file: str) -> None:
 
 
 
-def load_data() -> list[Member]:
-    with open(INPUT_FILE, "r", encoding="utf-8") as f:
+def load_data(input_file) -> list[Member]:
+    with open(input_file, "r", encoding="utf-8") as f:
         data = json.load(f)
     return [Member(**member) for member in data]
 

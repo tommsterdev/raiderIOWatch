@@ -1,21 +1,14 @@
-import json
 import logging
 import os
-import asyncio
 import httpx
-from typing import List, Tuple, Dict
+from typing import Tuple
 from dotenv import load_dotenv
 
 
 from models.member import Member
-from guild_crawler import get_guild
-from utils.helpers import write_item_to_file, chunks
-from utils.model_utils import create_DB_item_from_list
 
-from requests import httpx_get, JSONObject
-from time import perf_counter
+from src.requests import httpx_get, JSONObject
 from datetime import datetime
-
 
 logging.basicConfig(
     filename="debug.log",
@@ -52,7 +45,7 @@ async def parse_response(
     return score, ilvl
 
 
-async def request_member(client: httpx.Client, params: Dict[str, str]) -> JSONObject:
+async def request_member(client: httpx.Client, params: dict[str, str]) -> JSONObject:
     """
     Make http request
 
@@ -82,49 +75,3 @@ async def crawl_member(member: Member, client: httpx.Client) -> Member:
     member.last_crawled_at = str(datetime.now())
 
     return member
-
-
-async def main() -> None:
-
-    start = perf_counter()
-    async with httpx.AsyncClient() as client:
-        guild_data: List[Member] = await get_guild(client)
-
-    # filter inactive members:
-    active_members = [member for member in guild_data if member.rank <= 4]
-
-    elapsed = perf_counter() - start
-    print(f"get guild execution time: {elapsed:.2f} seconds")
-
-    print(f"getting member data...")
-    async with httpx.AsyncClient() as client:
-        crawled_members: List[Member] = await asyncio.gather(
-            *[crawl_member(member, client) for member in active_members]
-        )
-
-    elapsed = perf_counter() - start
-    print(f"crawl_members execution time: {elapsed:.2f} seconds")
-    logging.info(f"logging time elapsed = {elapsed} seconds")
-    output_file = "pydantic_data.json"
-    # convert members to ddb compatible Items
-    filtered_members = [member for member in crawled_members if member.score and member.ilvl]
-    member_items: list[DB_item] = create_DB_item_from_list(filtered_members)
-    logging.info(f"member items : {member_items}")
-    # chunk data
-    chunk = chunks(items=member_items)
-    while chunk:
-        try:
-            # write in chunks
-            write_item_to_file(next(chunk), output_file="chunks.json")
-        except StopIteration:
-            break
-
-
-    write_item_to_file(member_items, output_file="ddb_format_data.json")
-
-    elapsed = perf_counter() - start
-    print(f"dump objects and write to file execution time: {elapsed:.2f} seconds")
-
-
-if __name__ == "__main__":
-    asyncio.run(main())

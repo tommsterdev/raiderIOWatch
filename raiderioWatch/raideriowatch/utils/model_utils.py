@@ -4,13 +4,13 @@ from models.member import Member
 from models.db_item import DB_item
 
 
-def create_DB_item_from_list(members: List[Member]) -> List[DB_item]:
-    return [create_DB_item(member) for member in members]
+def create_DB_item(members: List[Member]) -> List[DB_item]:
+    return [_create_DB_item(member) for member in members]
 
 
-def create_DB_item(member: Member) -> DB_item:
+def _create_DB_item(member: Member) -> DB_item:
     """
-    Constructs member ddb_item from dict
+    Constructs member dynamodb item from Member model
     """
     Item = {
         "character": member.character_name,
@@ -28,11 +28,11 @@ def create_DB_item(member: Member) -> DB_item:
     }
     return DB_item(**Item)
 
-def create_member_from_list(member_entries: List[Dict[str, Any]]) -> List[Member]:
-    return [create_member_from_request(member) for member in member_entries]
+def create_member(member_entries: List[Dict[str, Any]]) -> List[Member]:
+    return [_create_member_from_request(member) for member in member_entries]
 
 
-def create_member_from_request(member_entry: dict[str, Any]) -> Member:
+def _create_member_from_request(member_entry: dict[str, Any]) -> Member:
     """
     Construct a Member object from raider io guild api request
     """
